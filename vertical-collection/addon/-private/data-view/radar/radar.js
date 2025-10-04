@@ -616,11 +616,19 @@ export default class Radar {
           }
         }
       } else {
-        // When shouldRecycle=false, leave DOM untouched and defer virtualComponents removal
-        // to layout phase to avoid race condition with Glimmer VM.
-        this._removeComponentPool.push(..._componentPool);
+        // When shouldRecycle=false, insert DOM back into container before removal
+        // to ensure Glimmer can find nodes when cleaning up
+        for (let i = _componentPool.length - 1; i >= 0; i--) {
+          const component = _componentPool[i];
+          insertRangeBefore(
+            this._itemContainer,
+            null,
+            component.realUpperBound,
+            component.realLowerBound,
+          );
+        }
+        virtualComponents.removeObjects(_componentPool);
         _componentPool.length = 0;
-        this._scheduleLayout();
       }
     }
 
@@ -650,20 +658,12 @@ export default class Radar {
         this._nextLayout = null;
 
         const {
-          virtualComponents,
-          _removeComponentPool,
           _appendComponentPool,
           _prependComponentPool,
           _occludedContentBefore,
           _occludedContentAfter,
           _itemContainer,
         } = this;
-
-        // Remove components from virtualComponents in layout phase (safe from race conditions)
-        if (_removeComponentPool.length > 0) {
-          virtualComponents.removeObjects(_removeComponentPool);
-          _removeComponentPool.length = 0;
-        }
 
         while (_prependComponentPool.length > 0) {
           const component = _prependComponentPool.pop();
