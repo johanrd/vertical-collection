@@ -107,6 +107,7 @@ export default class Radar {
     this._componentPool = [];
     this._prependComponentPool = [];
     this._appendComponentPool = []; // https://github.com/html-next/vertical-collection/issues/296
+    this._removeComponentPool = []; // Defer removal when shouldRecycle=false to avoid race condition
 
     // Boundaries
     this._occludedContentBefore = new OccludedContent(occlusionTagName);
@@ -549,8 +550,11 @@ export default class Radar {
           }
         }
       } else {
-        virtualComponents.removeObjects(_componentPool);
+        // When shouldRecycle=false, defer removal to layout phase to avoid race condition
+        // with concurrent DOM manipulation during fast scrolling
+        this._removeComponentPool.push(..._componentPool);
         _componentPool.length = 0;
+        this._scheduleLayout();
       }
     }
 
@@ -566,6 +570,42 @@ export default class Radar {
 
     _occludedContentAfter.style.height = `${Math.max(renderedTotalAfter, 0)}px`;
     _occludedContentAfter.innerHTML = totalItemsAfter > 0 ? `And ${totalItemsAfter} ${afterItemsText} after` : '';
+  }
+
+  _scheduleLayout() {
+    if (this._nextLayout === null) {
+      this._nextLayout = this.schedule('layout', () => {
+        this._nextLayout = null;
+
+        const {
+          virtualComponents,
+          _removeComponentPool,
+          _appendComponentPool,
+          _prependComponentPool,
+          _occludedContentBefore,
+          _occludedContentAfter,
+          _itemContainer
+        } = this;
+
+        // Remove components first, then do DOM manipulation
+        if (_removeComponentPool.length > 0) {
+          virtualComponents.removeObjects(_removeComponentPool);
+          _removeComponentPool.length = 0;
+        }
+
+        while (_prependComponentPool.length > 0) {
+          const component = _prependComponentPool.pop();
+          const relativeNode = _occludedContentBefore.realLowerBound.nextSibling;
+          insertRangeBefore(_itemContainer, relativeNode, component.realUpperBound, component.realLowerBound);
+        }
+
+        while (_appendComponentPool.length > 0) {
+          const component = _appendComponentPool.pop();
+          const relativeNode = _occludedContentAfter.realUpperBound;
+          insertRangeBefore(_itemContainer, relativeNode, component.realUpperBound, component.realLowerBound);
+        }
+      });
+    }
   }
 
   _appendComponent(component) {
@@ -591,21 +631,7 @@ export default class Radar {
       // We have to move them _after_ they render, so we schedule that if they exist
       if(!shouldRecycle) {
         _appendComponentPool.unshift(component);
-
-        if (this._nextLayout === null) {
-          this._nextLayout = this.schedule('layout', () => {
-            this._nextLayout = null;
-
-            while (_appendComponentPool.length > 0) {
-              const component = _appendComponentPool.pop();
-
-              // Changes with each inserted component
-              const relativeNode = _occludedContentAfter.realUpperBound;
-
-              insertRangeBefore(this._itemContainer, relativeNode, component.realUpperBound, component.realLowerBound);
-            }
-          });
-        }
+        this._scheduleLayout();
       }
     }
   }
@@ -629,21 +655,7 @@ export default class Radar {
       // Components that are both new and prepended still need to be rendered at the end because Glimmer.
       // We have to move them _after_ they render, so we schedule that if they exist
       _prependComponentPool.unshift(component);
-
-      if (this._nextLayout === null) {
-        this._nextLayout = this.schedule('layout', () => {
-          this._nextLayout = null;
-
-          while (_prependComponentPool.length > 0) {
-            const component = _prependComponentPool.pop();
-
-            // Changes with each inserted component
-            const relativeNode = _occludedContentBefore.realLowerBound.nextSibling;
-
-            insertRangeBefore(_itemContainer, relativeNode, component.realUpperBound, component.realLowerBound);
-          }
-        });
-      }
+      this._scheduleLayout();
     }
   }
 
