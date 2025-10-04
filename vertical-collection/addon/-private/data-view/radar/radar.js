@@ -104,7 +104,6 @@ export default class Radar {
     this._componentPool = [];
     this._prependComponentPool = [];
     this._appendComponentPool = []; // https://github.com/html-next/vertical-collection/issues/296
-    this._removeComponentPool = []; // Defer removal when shouldRecycle=false to avoid race condition
 
     // Boundaries
     this._occludedContentBefore = new OccludedContent(occlusionTagName);
@@ -652,45 +651,6 @@ export default class Radar {
         : '';
   }
 
-  _scheduleLayout() {
-    if (this._nextLayout === null) {
-      this._nextLayout = this.schedule('layout', () => {
-        this._nextLayout = null;
-
-        const {
-          _appendComponentPool,
-          _prependComponentPool,
-          _occludedContentBefore,
-          _occludedContentAfter,
-          _itemContainer,
-        } = this;
-
-        while (_prependComponentPool.length > 0) {
-          const component = _prependComponentPool.pop();
-          const relativeNode =
-            _occludedContentBefore.realLowerBound.nextSibling;
-          insertRangeBefore(
-            _itemContainer,
-            relativeNode,
-            component.realUpperBound,
-            component.realLowerBound,
-          );
-        }
-
-        while (_appendComponentPool.length > 0) {
-          const component = _appendComponentPool.pop();
-          const relativeNode = _occludedContentAfter.realUpperBound;
-          insertRangeBefore(
-            _itemContainer,
-            relativeNode,
-            component.realUpperBound,
-            component.realLowerBound,
-          );
-        }
-      });
-    }
-  }
-
   _appendComponent(component) {
     const {
       virtualComponents,
@@ -719,7 +679,26 @@ export default class Radar {
       // We have to move them _after_ they render, so we schedule that if they exist
       if (!shouldRecycle) {
         _appendComponentPool.unshift(component);
-        this._scheduleLayout();
+
+        if (this._nextLayout === null) {
+          this._nextLayout = this.schedule('layout', () => {
+            this._nextLayout = null;
+
+            while (_appendComponentPool.length > 0) {
+              const component = _appendComponentPool.pop();
+
+              // Changes with each inserted component
+              const relativeNode = _occludedContentAfter.realUpperBound;
+
+              insertRangeBefore(
+                this._itemContainer,
+                relativeNode,
+                component.realUpperBound,
+                component.realLowerBound,
+              );
+            }
+          });
+        }
       }
     }
   }
@@ -748,7 +727,27 @@ export default class Radar {
       // Components that are both new and prepended still need to be rendered at the end because Glimmer.
       // We have to move them _after_ they render, so we schedule that if they exist
       _prependComponentPool.unshift(component);
-      this._scheduleLayout();
+
+      if (this._nextLayout === null) {
+        this._nextLayout = this.schedule('layout', () => {
+          this._nextLayout = null;
+
+          while (_prependComponentPool.length > 0) {
+            const component = _prependComponentPool.pop();
+
+            // Changes with each inserted component
+            const relativeNode =
+              _occludedContentBefore.realLowerBound.nextSibling;
+
+            insertRangeBefore(
+              _itemContainer,
+              relativeNode,
+              component.realUpperBound,
+              component.realLowerBound,
+            );
+          }
+        });
+      }
     }
   }
 
