@@ -607,7 +607,7 @@ export default class Radar {
             component.realUpperBound,
             component.realLowerBound,
           );
-          run(() => {
+          run.join(() => {
             virtualComponents.removeObject(component);
           });
           _componentPool.splice(i, 1);
