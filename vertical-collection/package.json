@@ -1,6 +1,6 @@
 {
   "name": "@html-next/vertical-collection",
-  "version": "5.0.2",
+  "version": "5.0.5",
   "description": "infinite-scroll, done right. done.",
   "keywords": [
     "occlusion",
@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.10.2",
-    "ember-raf-scheduler": "~0.3.0"
+    "ember-raf-scheduler": "~0.5.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.10",

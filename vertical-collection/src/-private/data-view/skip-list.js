@@ -27,30 +27,10 @@ import roundTo from './utils/round-to.js';
  * traverse to get the total value before and after the final index.
  */
 
-function fill(array, value, start = 0, end = array.length) {
-  if (typeof array.fill === 'function') {
-    array.fill(value, start, end);
-  } else {
-    for (; start < end; start++) {
-      array[start] = value;
-    }
-
-    return array;
-  }
-}
-
-function subarray(array, start, end) {
-  if (typeof array.subarray === 'function') {
-    return array.subarray(start, end);
-  } else {
-    return array.slice(start, end);
-  }
-}
-
 export default class SkipList {
   constructor(length, defaultValue) {
     const values = new Float32Array(new ArrayBuffer(length * 4));
-    fill(values, defaultValue);
+    values.fill(defaultValue);
 
     this.length = length;
     this.defaultValue = defaultValue;
@@ -80,7 +60,7 @@ export default class SkipList {
         // This allows us to use the `fill` method on Typed arrays, which
         // an order of magnitude faster than manually calculating each value.
         defaultValue = defaultValue * 2;
-        fill(layer, defaultValue);
+        layer.fill(defaultValue);
 
         left = prevLayer[(length - 1) * 2] || 0;
         right = prevLayer[(length - 1) * 2 + 1] || 0;
@@ -127,7 +107,12 @@ export default class SkipList {
     let totalBefore = 0;
     let totalAfter = 0;
 
+    if (total <= 0) {
+      return { index: 0, totalBefore: 0, totalAfter: 0 };
+    }
+
     targetValue = Math.min(total - 1, targetValue);
+    targetValue = Math.max(0, targetValue);
 
     assert('targetValue must be a number', typeof targetValue === 'number');
     assert('targetValue must be greater than or equal to 0', targetValue >= 0);
@@ -196,6 +181,7 @@ export default class SkipList {
 
   set(index, value) {
     assert('value must be a number', typeof value === 'number');
+    value = Math.max(0, value);
     assert('value must non-negative', value >= 0);
     assert('index must be a number', typeof index === 'number');
     assert(
@@ -234,7 +220,7 @@ export default class SkipList {
     const newValues = new Float32Array(new ArrayBuffer(newLength * 4));
 
     newValues.set(oldValues, numPrepended);
-    fill(newValues, defaultValue, 0, numPrepended);
+    newValues.fill(defaultValue, 0, numPrepended);
 
     this.length = newLength;
     this._initializeLayers(newValues);
@@ -248,7 +234,7 @@ export default class SkipList {
     const newValues = new Float32Array(new ArrayBuffer(newLength * 4));
 
     newValues.set(oldValues);
-    fill(newValues, defaultValue, oldLength);
+    newValues.fill(defaultValue, oldLength);
 
     this.length = newLength;
     this._initializeLayers(newValues);
@@ -265,9 +251,9 @@ export default class SkipList {
 
     if (oldLength < newLength) {
       newValues.set(oldValues);
-      fill(newValues, defaultValue, oldLength);
+      newValues.fill(defaultValue, oldLength);
     } else {
-      newValues.set(subarray(oldValues, 0, newLength));
+      newValues.set(oldValues.subarray(0, newLength));
     }
 
     this.length = newLength;
