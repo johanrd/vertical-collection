@@ -1,5 +1,5 @@
 import { run } from '@ember/runloop';
-import { TrackedArray } from 'tracked-built-ins';
+import { tracked } from '@glimmer/tracking';
 import { assert } from '@ember/debug';
 import { DEBUG } from '@glimmer/env';
 
@@ -25,6 +25,8 @@ import keyForItem from '../../ember-internals/key-for-item.js';
 import document from '../../utils/document-shim.js';
 
 export default class Radar {
+  @tracked virtualComponents;
+
   constructor(
     parentToken,
     {
@@ -119,16 +121,18 @@ export default class Radar {
       this._domPool = document.createDocumentFragment();
     }
 
-    // Initialize virtual components. The radar is made while the collection renders, and a
-    // tracked array cannot change there after it is read, so the first update uses a plain array.
-    this.virtualComponents = [
+    // The pool. virtualComponents is a copy for the template, and the first update adds all
+    // of its components before it makes that copy.
+    this._published = false;
+    this._components = [
       this._occludedContentBefore,
       this._occludedContentAfter,
     ];
     this.orderedComponents = [];
 
     this._updateVirtualComponents();
-    this.virtualComponents = new TrackedArray(this.virtualComponents);
+    this.virtualComponents = this._components.slice();
+    this._published = true;
 
     if (DEBUG) {
       this._debugDidUpdate = null;
@@ -464,7 +468,6 @@ export default class Radar {
     const {
       items,
       orderedComponents,
-      virtualComponents,
       _componentPool,
 
       shouldRecycle,
@@ -609,7 +612,8 @@ export default class Radar {
           // render the rest of the out of order pool with the wrong content (#358).
           // eslint-disable-next-line ember/no-runloop
           run(() => {
-            virtualComponents.splice(virtualComponents.indexOf(component), 1);
+            this._components.splice(this._components.indexOf(component), 1);
+            this._publishComponents();
           });
           _componentPool.splice(i, 1);
         }
@@ -636,9 +640,14 @@ export default class Radar {
         : '';
   }
 
+  _publishComponents() {
+    if (this._published) {
+      this.virtualComponents = this._components.slice();
+    }
+  }
+
   _appendComponent(component) {
     const {
-      virtualComponents,
       _occludedContentAfter,
       _appendComponentPool,
       shouldRecycle,
@@ -655,7 +664,8 @@ export default class Radar {
         component.realLowerBound,
       );
     } else {
-      virtualComponents.splice(virtualComponents.length - 1, 0, component);
+      this._components.splice(this._components.length - 1, 0, component);
+      this._publishComponents();
       component.rendered = true;
 
       // shouldRecycle=false breaks UI when scrolling the elements fast.
@@ -689,12 +699,8 @@ export default class Radar {
   }
 
   _prependComponent(component) {
-    const {
-      virtualComponents,
-      _occludedContentBefore,
-      _prependComponentPool,
-      _itemContainer,
-    } = this;
+    const { _occludedContentBefore, _prependComponentPool, _itemContainer } =
+      this;
 
     const relativeNode = _occludedContentBefore.realLowerBound.nextSibling;
 
@@ -706,7 +712,8 @@ export default class Radar {
         component.realLowerBound,
       );
     } else {
-      virtualComponents.splice(virtualComponents.length - 1, 0, component);
+      this._components.splice(this._components.length - 1, 0, component);
+      this._publishComponents();
       component.rendered = true;
 
       // Components that are both new and prepended still need to be rendered at the end because Glimmer.

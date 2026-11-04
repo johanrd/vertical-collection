@@ -354,17 +354,11 @@ class VerticalCollection extends Component {
   }
 
   /**
-   * The pool of components the template renders. Called from the template with the
-   * inputs it depends on, so it runs again when one of them changes: the items, their
-   * length, which a tracked array reports when it changes in place, and the radar settings.
+   * Passes the inputs to the radar. Called from the template with the inputs it depends
+   * on, so it runs again when one of them changes: the items, their length, which a
+   * tracked array reports when it changes in place, and the radar settings.
    */
-  virtualComponents = (
-    items,
-    itemsLength,
-    renderAll,
-    estimateHeight,
-    bufferSize,
-  ) => {
+  syncRadar = (items, itemsLength, renderAll, estimateHeight, bufferSize) => {
     const { _radar } = this;
 
     items ??= [];
@@ -380,8 +374,6 @@ class VerticalCollection extends Component {
 
     _radar.scheduleUpdate(true);
     this._clearScheduledActions();
-
-    return _radar.virtualComponents;
   };
 
   schedule(queueName, job) {
@@ -680,17 +672,14 @@ class VerticalCollection extends Component {
   }
 
   <template>
-    {{#each
-      (this.virtualComponents
-        this.items
-        this.items.length
-        this.renderAll
-        this.estimateHeight
-        this.bufferSize
-      )
-      key="id"
-      as |virtualComponent|
+    {{~this.syncRadar
+      this.items
+      this.items.length
+      this.renderAll
+      this.estimateHeight
+      this.bufferSize
     ~}}
+    {{#each this._radar.virtualComponents key="id" as |virtualComponent|~}}
       {{~virtualComponent.upperBound~}}
       {{~#if virtualComponent.isOccludedContent~}}
         {{virtualComponent.element}}
