@@ -1,0 +1,220 @@
+diff --git a/vertical-collection/babel.config.mjs b/vertical-collection/babel.config.mjs
+index dcf9be9..083e532 100644
+--- a/vertical-collection/babel.config.mjs
++++ b/vertical-collection/babel.config.mjs
+@@ -15,9 +15,5 @@ export default {
+         transforms: [],
+       },
+     ],
+-    [
+-      'module:decorator-transforms',
+-      { runtime: { import: 'decorator-transforms/runtime-esm' } },
+-    ],
+   ],
+ };
+diff --git a/vertical-collection/package.json b/vertical-collection/package.json
+index 603a737..514746d 100644
+--- a/vertical-collection/package.json
++++ b/vertical-collection/package.json
+@@ -66,9 +66,7 @@
+   },
+   "dependencies": {
+     "@embroider/addon-shim": "^1.10.2",
+-    "decorator-transforms": "^2.3.0",
+-    "ember-raf-scheduler": "~0.5.1",
+-    "tracked-built-ins": "^4.1.2"
++    "ember-raf-scheduler": "~0.5.1"
+   },
+   "peerDependencies": {
+     "@glimmer/component": "^1.1.2 || ^2.0.0"
+diff --git a/vertical-collection/src/-private/data-view/elements/virtual-component.ts b/vertical-collection/src/-private/data-view/elements/virtual-component.ts
+index ac61966..015f2b3 100644
+--- a/vertical-collection/src/-private/data-view/elements/virtual-component.ts
++++ b/vertical-collection/src/-private/data-view/elements/virtual-component.ts
+@@ -1,4 +1,4 @@
+-import { tracked } from '@glimmer/tracking';
++import defineTracked from '../../utils/define-tracked.ts';
+ import { assert } from '@ember/debug';
+ import { DEBUG } from '@glimmer/env';
+ 
+@@ -8,8 +8,8 @@ let VC_IDENTITY = 0;
+ 
+ export default class VirtualComponent<T = unknown> {
+   id: string;
+-  @tracked content: T;
+-  @tracked index: number;
++  declare content: T;
++  declare index: number;
+   upperBound: Text | null;
+   lowerBound: Text | null;
+   rendered: boolean;
+@@ -95,3 +95,6 @@ export default class VirtualComponent<T = unknown> {
+     this.lowerBound = null;
+   }
+ }
++
++defineTracked(VirtualComponent.prototype, 'content');
++defineTracked(VirtualComponent.prototype, 'index');
+diff --git a/vertical-collection/src/-private/data-view/radar/radar.ts b/vertical-collection/src/-private/data-view/radar/radar.ts
+index 5a22f29..c4ad621 100644
+--- a/vertical-collection/src/-private/data-view/radar/radar.ts
++++ b/vertical-collection/src/-private/data-view/radar/radar.ts
+@@ -1,5 +1,5 @@
+ import { run } from '@ember/runloop';
+-import { TrackedArray } from 'tracked-built-ins';
++import defineTracked from '../../utils/define-tracked.ts';
+ import { assert } from '@ember/debug';
+ import { DEBUG } from '@glimmer/env';
+ 
+@@ -112,6 +112,8 @@ export default abstract class Radar<T = unknown> {
+   declare _domPool: DocumentFragment | undefined;
+ 
+   declare virtualComponents: PoolComponent<T>[];
++  declare _components: PoolComponent<T>[];
++  declare _published: boolean;
+   declare orderedComponents: VirtualComponent<T>[];
+ 
+   declare _debugDidUpdate: ((radar: Radar<T>) => void) | null | undefined;
+@@ -223,14 +225,16 @@ export default abstract class Radar<T = unknown> {
+ 
+     // Initialize virtual components. The radar is made while the collection renders, and a
+     // tracked array cannot change there after it is read, so the first update uses a plain array.
+-    this.virtualComponents = [
++    this._published = false;
++    this._components = [
+       this._occludedContentBefore,
+       this._occludedContentAfter,
+     ];
+     this.orderedComponents = [];
+ 
+     this._updateVirtualComponents();
+-    this.virtualComponents = new TrackedArray(this.virtualComponents);
++    this.virtualComponents = this._components.slice();
++    this._published = true;
+ 
+     if (DEBUG) {
+       this._debugDidUpdate = null;
+@@ -601,7 +605,6 @@ export default abstract class Radar<T = unknown> {
+     const {
+       items,
+       orderedComponents,
+-      virtualComponents,
+       _componentPool,
+ 
+       shouldRecycle,
+@@ -740,7 +743,8 @@ export default abstract class Radar<T = unknown> {
+           // render the rest of the out of order pool with the wrong content (#358).
+           // eslint-disable-next-line ember/no-runloop
+           run(() => {
+-            virtualComponents.splice(virtualComponents.indexOf(component), 1);
++            this._components.splice(this._components.indexOf(component), 1);
++            this._publishComponents();
+           });
+           _componentPool.splice(i, 1);
+         }
+@@ -767,9 +771,14 @@ export default abstract class Radar<T = unknown> {
+         : '';
+   }
+ 
++  _publishComponents() {
++    if (this._published) {
++      this.virtualComponents = this._components.slice();
++    }
++  }
++
+   _appendComponent(component: VirtualComponent<T>): void {
+     const {
+-      virtualComponents,
+       _occludedContentAfter,
+       _appendComponentPool,
+       shouldRecycle,
+@@ -785,7 +794,8 @@ export default abstract class Radar<T = unknown> {
+         component.realLowerBound,
+       );
+     } else {
+-      virtualComponents.splice(virtualComponents.length - 1, 0, component);
++      this._components.splice(this._components.length - 1, 0, component);
++      this._publishComponents();
+       component.rendered = true;
+ 
+       // shouldRecycle=false breaks UI when scrolling the elements fast.
+@@ -819,7 +829,7 @@ export default abstract class Radar<T = unknown> {
+   }
+ 
+   _prependComponent(component: VirtualComponent<T>): void {
+-    const { virtualComponents, _occludedContentBefore, _prependComponentPool } =
++    const { _occludedContentBefore, _prependComponentPool } =
+       this;
+ 
+     const relativeNode =
+@@ -833,7 +843,8 @@ export default abstract class Radar<T = unknown> {
+         component.realLowerBound,
+       );
+     } else {
+-      virtualComponents.splice(virtualComponents.length - 1, 0, component);
++      this._components.splice(this._components.length - 1, 0, component);
++      this._publishComponents();
+       component.rendered = true;
+ 
+       // Components that are both new and prepended still need to be rendered at the end because Glimmer.
+@@ -1005,3 +1016,5 @@ export default abstract class Radar<T = unknown> {
+     return this.items ? this.items.length : 0;
+   }
+ }
++
++defineTracked(Radar.prototype, 'virtualComponents');
+diff --git a/vertical-collection/src/components/vertical-collection.gts b/vertical-collection/src/components/vertical-collection.gts
+index 33b15f9..f9e8e7d 100644
+--- a/vertical-collection/src/components/vertical-collection.gts
++++ b/vertical-collection/src/components/vertical-collection.gts
+@@ -415,7 +415,7 @@ class VerticalCollection<T = unknown> extends Component<
+    * inputs it depends on, so it runs again when one of them changes: the items, their
+    * length, which a tracked array reports when it changes in place, and the radar settings.
+    */
+-  private virtualComponents = (
++  private syncRadar = (
+     items: readonly T[] | null,
+     itemsLength: number | undefined,
+     renderAll: boolean,
+@@ -438,7 +438,6 @@ class VerticalCollection<T = unknown> extends Component<
+     _radar.scheduleUpdate(true);
+     this._clearScheduledActions();
+ 
+-    return _radar.virtualComponents;
+   };
+ 
+   private schedule(queueName: QueueName, job: () => void): Token {
+@@ -738,15 +737,8 @@ class VerticalCollection<T = unknown> extends Component<
+   }
+ 
+   <template>
+-    {{#each
+-      (this.virtualComponents
+-        this.items
+-        this.items.length
+-        this.renderAll
+-        this.estimateHeight
+-        this.bufferSize
+-      )
+-      key="id"
++    {{~this.syncRadar this.items this.items.length this.renderAll this.estimateHeight this.bufferSize~}}
++    {{#each this._radar.virtualComponents key="id"
+       as |virtualComponent|
+     ~}}
+       {{~virtualComponent.upperBound~}}
+diff --git a/vertical-collection/src/-private/utils/define-tracked.ts b/vertical-collection/src/-private/utils/define-tracked.ts
+new file mode 100644
+index 0000000..f505415
+--- /dev/null
++++ b/vertical-collection/src/-private/utils/define-tracked.ts
+@@ -0,0 +1,10 @@
++import { tracked } from '@glimmer/tracking';
++
++export default function defineTracked(prototype: object, key: string) {
++  Object.defineProperty(
++    prototype,
++    key,
++    // @ts-ignore the decorator form, called directly
++    tracked(prototype, key, { enumerable: true, configurable: true, writable: true }) as PropertyDescriptor,
++  );
++}

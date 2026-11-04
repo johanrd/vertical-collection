@@ -49,6 +49,30 @@ Script time, median ms. 15 rounds, in production builds. The last two columns ar
 
 Raw runs and profiles: [`results/render-all-cause-ember-7.4.0.json`](results/render-all-cause-ember-7.4.0.json). Run with `BENCH_CAUSE=1`.
 
+## v6 without `tracked-built-ins` and `decorator-transforms`
+
+A trial, in [`v6-without-dependencies.patch`](v6-without-dependencies.patch) on top of #574. Not a PR.
+
+- The array is a plain array in a tracked field. Each change publishes a copy.
+- `content` and `index` use the `tracked` function directly, in its decorator form, instead of `@tracked`.
+- A helper sets the radar arguments, and `{{#each}}` reads the array directly. If one helper does both, each array change runs it again and the update loops.
+
+The test suite passes, 243 of 243, on Ember 3.28, 6.12, 7.4 and 7.5 beta. The results below are for Ember 7.4, with 15 rounds, as differences paired by round with 95% bootstrap intervals. Raw runs: [`results/without-dependencies-ember-7.4.0.json`](results/without-dependencies-ember-7.4.0.json).
+
+| Script time, the trial minus | v5 | v6 | v7 |
+|---|---|---|---|
+| Scroll, recycling on | -5 (-53 to +33) | 0 (-10 to +10) | +2 (-2 to +33) |
+| Scroll, recycling off | 0 (-55 to +87) | **-87 (-160 to -30)** | -16 (-120 to +29) |
+| Infinite scroll, append | +1 (0 to +5) | +1 (-2 to +3) | 0 (-2 to +4) |
+| Prepend | 0 (-2 to +2) | -1 (-5 to +1) | -1 (-4 to 0) |
+| Filter and sort | 0 (-3 to +2) | 0 (-2 to +1) | -1 (-3 to +2) |
+| Mount, 10 000 rows | 0 (-1 to 0) | 0 (-1 to 0) | 0 (-1 to 0) |
+| Mount with `@renderAll`, 5 000 rows | **+39 (+36 to +43)** | -2 (-4 to +3) | **+41 (+38 to +43)** |
+
+- With recycling off, the trial is clearly faster than v6, and shows no clear difference from v5.
+- The `@renderAll` difference stays. So it does not come from `decorator-transforms`, but from the field form of `tracked` compared with the `tracked()` function.
+- This trial changes the array and the fields together, so it does not show which change helps with recycling off.
+
 ## Is this an upstream problem?
 
 Not one that shows in this use. `trackedArray` has a tag per index, but each reader also consumes the collection tag, and each write dirties it. The index tags look redundant, from reading the code.
