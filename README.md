@@ -13,7 +13,7 @@ component for performant lists and `svelte renders` to match a core belief:
 
 ## Compatibility
 
-* Ember.js v3.28.0 or above. Below v4.5, the app needs [ember-functions-as-helper-polyfill](https://github.com/ember-polyfills/ember-functions-as-helper-polyfill).
+* Ember.js v7.3.0 or above. Older versions need polyfills, which are not ready yet. Below v4.5, the app also needs [ember-functions-as-helper-polyfill](https://github.com/ember-polyfills/ember-functions-as-helper-polyfill).
 * Ember CLI v4.4 or above
 * Node.js v16 or above
 
