@@ -1,0 +1,1399 @@
+{
+  "ember": "7.4.0",
+  "rounds": 20,
+  "scrollSteps": 300,
+  "stepPixels": 200,
+  "rowChanges": 20000,
+  "microRounds": 15,
+  "main": "24ee6d8",
+  "glimmer": "7377e7a",
+  "chrome": "Google Chrome 156.0.8078.80",
+  "summary": {
+    "rowChangeMicroseconds": {
+      "production": {
+        "A() (main)": {
+          "p25": 1.5849999904632568,
+          "median": 1.5900000095367433,
+          "p75": 1.6
+        },
+        "TrackedArray (#573)": {
+          "p25": 6.515000009536743,
+          "median": 6.580000019073487,
+          "p75": 6.620000004768372
+        },
+        "trackedArray (built-in)": {
+          "p25": 5.354999995231628,
+          "median": 5.395000004768372,
+          "p75": 5.429999995231628
+        },
+        "plain array (not reactive)": {
+          "p25": 0.33999998569488527,
+          "median": 0.3450000047683716,
+          "p75": 0.35
+        }
+      },
+      "development": {
+        "A() (main)": {
+          "p25": 1.715000009536743,
+          "median": 1.734999990463257,
+          "p75": 1.75
+        },
+        "TrackedArray (#573)": {
+          "p25": 6.7349999904632565,
+          "median": 6.754999995231628,
+          "p75": 6.865000009536743
+        },
+        "trackedArray (built-in)": {
+          "p25": 5.545000004768372,
+          "median": 5.565000009536743,
+          "p75": 5.6
+        },
+        "plain array (not reactive)": {
+          "p25": 0.4,
+          "median": 0.40999999046325686,
+          "p75": 0.41000001430511473
+        }
+      }
+    },
+    "scroll": [
+      {
+        "build": "main, A()",
+        "recycle": true,
+        "newBlocks": {
+          "p25": 1,
+          "median": 1,
+          "p75": 1
+        },
+        "scriptMs": {
+          "p25": 167.98399999999998,
+          "median": 182.893,
+          "p75": 235.17400000000004
+        },
+        "taskMs": {
+          "p25": 496.9870000000001,
+          "median": 549.3249999999999,
+          "p75": 670.48
+        }
+      },
+      {
+        "build": "main, A()",
+        "recycle": false,
+        "newBlocks": {
+          "p25": 1500,
+          "median": 1500,
+          "p75": 1500
+        },
+        "scriptMs": {
+          "p25": 323.37300000000005,
+          "median": 378.42600000000004,
+          "p75": 438.57099999999997
+        },
+        "taskMs": {
+          "p25": 616.943,
+          "median": 715.413,
+          "p75": 774.5799999999999
+        }
+      },
+      {
+        "build": "#573, TrackedArray",
+        "recycle": true,
+        "newBlocks": {
+          "p25": 1,
+          "median": 1,
+          "p75": 1
+        },
+        "scriptMs": {
+          "p25": 142.79500000000002,
+          "median": 191.329,
+          "p75": 233.55100000000002
+        },
+        "taskMs": {
+          "p25": 413.875,
+          "median": 557.9060000000001,
+          "p75": 652.79
+        }
+      },
+      {
+        "build": "#573, TrackedArray",
+        "recycle": false,
+        "newBlocks": {
+          "p25": 1500,
+          "median": 1500,
+          "p75": 1500
+        },
+        "scriptMs": {
+          "p25": 415.86,
+          "median": 429.118,
+          "p75": 504.244
+        },
+        "taskMs": {
+          "p25": 720.5500000000001,
+          "median": 752.278,
+          "p75": 861.1880000000001
+        }
+      },
+      {
+        "build": "#573, trackedArray built-in",
+        "recycle": true,
+        "newBlocks": {
+          "p25": 1,
+          "median": 1,
+          "p75": 1
+        },
+        "scriptMs": {
+          "p25": 158.719,
+          "median": 207.287,
+          "p75": 231.902
+        },
+        "taskMs": {
+          "p25": 475.407,
+          "median": 565.136,
+          "p75": 621.7689999999999
+        }
+      },
+      {
+        "build": "#573, trackedArray built-in",
+        "recycle": false,
+        "newBlocks": {
+          "p25": 1500,
+          "median": 1500,
+          "p75": 1500
+        },
+        "scriptMs": {
+          "p25": 396.725,
+          "median": 435.123,
+          "p75": 555.99
+        },
+        "taskMs": {
+          "p25": 702.5490000000001,
+          "median": 765.8280000000001,
+          "p75": 956.116
+        }
+      }
+    ]
+  },
+  "rowChange": {
+    "production": {
+      "A() (main)": [
+        1.5,
+        1.5350000143051148,
+        1.6049999952316285,
+        1.5850000143051146,
+        1.5900000095367433,
+        1.6149999856948853,
+        1.6,
+        1.5900000095367433,
+        1.5900000095367433,
+        1.5849999904632568,
+        1.6049999952316285,
+        1.5950000047683714,
+        1.5899999856948852,
+        1.6099999904632567,
+        1.5849999904632568
+      ],
+      "TrackedArray (#573)": [
+        6.629999995231628,
+        6.565000009536743,
+        6.520000004768371,
+        6.495000004768372,
+        6.585000014305115,
+        6.6949999809265135,
+        6.550000000000001,
+        6.625,
+        6.6499999999999995,
+        6.620000004768372,
+        6.504999995231628,
+        6.5,
+        6.515000009536743,
+        6.594999980926514,
+        6.580000019073487
+      ],
+      "trackedArray (built-in)": [
+        5.404999995231629,
+        5.325,
+        5.395000004768372,
+        5.375,
+        5.525,
+        5.485000014305115,
+        5.434999990463257,
+        5.294999980926513,
+        5.340000009536743,
+        5.5,
+        5.414999985694886,
+        5.379999995231628,
+        5.360000014305115,
+        5.429999995231628,
+        5.354999995231628
+      ],
+      "plain array (not reactive)": [
+        0.3449999809265136,
+        0.35,
+        0.33999998569488527,
+        0.35499999523162845,
+        0.35,
+        0.3649999856948853,
+        0.3450000047683716,
+        0.3349999904632568,
+        0.3450000047683716,
+        0.3450000047683716,
+        0.35,
+        0.3450000047683716,
+        0.3350000143051147,
+        0.35,
+        0.33999998569488527
+      ]
+    },
+    "development": {
+      "A() (main)": [
+        1.659999990463257,
+        1.6700000047683714,
+        1.7549999952316284,
+        1.715000009536743,
+        1.75,
+        1.75,
+        1.7249999999999999,
+        1.734999990463257,
+        1.7699999809265137,
+        1.7799999952316283,
+        1.7700000047683715,
+        1.7400000095367432,
+        1.7049999952316284,
+        1.734999990463257,
+        1.7249999999999999
+      ],
+      "TrackedArray (#573)": [
+        6.745000004768372,
+        6.865000009536743,
+        6.7349999904632565,
+        6.685000014305114,
+        6.754999995231628,
+        6.745000004768372,
+        6.864999985694885,
+        6.870000004768372,
+        6.880000019073487,
+        6.989999985694885,
+        6.929999995231628,
+        6.8,
+        6.679999995231629,
+        6.745000004768372,
+        6.729999995231628
+      ],
+      "trackedArray (built-in)": [
+        5.55,
+        5.595000004768371,
+        5.6,
+        5.659999990463257,
+        5.5550000190734865,
+        5.690000009536743,
+        5.439999985694885,
+        5.545000004768372,
+        5.7349999904632565,
+        5.679999995231629,
+        5.580000019073487,
+        5.55,
+        5.5,
+        5.509999990463257,
+        5.565000009536743
+      ],
+      "plain array (not reactive)": [
+        0.41000001430511473,
+        0.4149999856948852,
+        0.41000001430511473,
+        0.4049999952316284,
+        0.4,
+        0.4049999952316284,
+        0.4050000190734863,
+        0.41000001430511473,
+        0.41500000953674315,
+        0.4149999856948852,
+        0.40999999046325686,
+        0.41500000953674315,
+        0.39499998092651367,
+        0.39500000476837155,
+        0.4
+      ]
+    }
+  },
+  "scroll": [
+    {
+      "round": 0,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 91.417,
+      "taskMs": 291.03
+    },
+    {
+      "round": 0,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 125.947,
+      "taskMs": 371.339
+    },
+    {
+      "round": 0,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 121.30300000000001,
+      "taskMs": 354.704
+    },
+    {
+      "round": 0,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 435.123,
+      "taskMs": 750.0210000000001
+    },
+    {
+      "round": 0,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 224.43200000000002,
+      "taskMs": 448.62700000000007
+    },
+    {
+      "round": 0,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 259.601,
+      "taskMs": 492.782
+    },
+    {
+      "round": 1,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 315.96999999999997,
+      "taskMs": 566.0189999999999
+    },
+    {
+      "round": 1,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 264.756,
+      "taskMs": 494.18600000000004
+    },
+    {
+      "round": 1,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 284.325,
+      "taskMs": 493.68399999999997
+    },
+    {
+      "round": 1,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 96.216,
+      "taskMs": 273.543
+    },
+    {
+      "round": 1,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 105.608,
+      "taskMs": 303.158
+    },
+    {
+      "round": 1,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 180.209,
+      "taskMs": 496.9870000000001
+    },
+    {
+      "round": 2,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 316.151,
+      "taskMs": 549.422
+    },
+    {
+      "round": 2,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 425.545,
+      "taskMs": 710.4820000000001
+    },
+    {
+      "round": 2,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 477.599,
+      "taskMs": 866.4490000000001
+    },
+    {
+      "round": 2,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 251.29599999999996,
+      "taskMs": 690.3689999999999
+    },
+    {
+      "round": 2,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 238.73299999999998,
+      "taskMs": 643.174
+    },
+    {
+      "round": 2,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 247.60799999999998,
+      "taskMs": 675.1120000000001
+    },
+    {
+      "round": 3,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 396.809,
+      "taskMs": 715.413
+    },
+    {
+      "round": 3,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 456.198,
+      "taskMs": 778.28
+    },
+    {
+      "round": 3,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 628.478,
+      "taskMs": 1048.594
+    },
+    {
+      "round": 3,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 261.778,
+      "taskMs": 673.4290000000001
+    },
+    {
+      "round": 3,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 248.412,
+      "taskMs": 652.79
+    },
+    {
+      "round": 3,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 226.832,
+      "taskMs": 603.043
+    },
+    {
+      "round": 4,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 231.902,
+      "taskMs": 621.7689999999999
+    },
+    {
+      "round": 4,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 209.10299999999998,
+      "taskMs": 572.3340000000001
+    },
+    {
+      "round": 4,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 137.81799999999998,
+      "taskMs": 387.20700000000005
+    },
+    {
+      "round": 4,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 388.47499999999997,
+      "taskMs": 668.034
+    },
+    {
+      "round": 4,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 422.637,
+      "taskMs": 720.5500000000001
+    },
+    {
+      "round": 4,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 264.641,
+      "taskMs": 497.97600000000006
+    },
+    {
+      "round": 5,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 490.79,
+      "taskMs": 888.387
+    },
+    {
+      "round": 5,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 557.738,
+      "taskMs": 956.116
+    },
+    {
+      "round": 5,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 553.7330000000001,
+      "taskMs": 921.966
+    },
+    {
+      "round": 5,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 225.289,
+      "taskMs": 612.5740000000001
+    },
+    {
+      "round": 5,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 258.19399999999996,
+      "taskMs": 685.662
+    },
+    {
+      "round": 5,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 181.977,
+      "taskMs": 529.378
+    },
+    {
+      "round": 6,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 215.018,
+      "taskMs": 620.721
+    },
+    {
+      "round": 6,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 192.54,
+      "taskMs": 568.661
+    },
+    {
+      "round": 6,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 213.934,
+      "taskMs": 616.523
+    },
+    {
+      "round": 6,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 590.6859999999999,
+      "taskMs": 993.6709999999999
+    },
+    {
+      "round": 6,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 406.649,
+      "taskMs": 751.5169999999999
+    },
+    {
+      "round": 6,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 556.096,
+      "taskMs": 973.744
+    },
+    {
+      "round": 7,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 521.695,
+      "taskMs": 885.07
+    },
+    {
+      "round": 7,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 506.406,
+      "taskMs": 900.237
+    },
+    {
+      "round": 7,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 617.7779999999999,
+      "taskMs": 1003.8799999999999
+    },
+    {
+      "round": 7,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 249.54900000000004,
+      "taskMs": 700.747
+    },
+    {
+      "round": 7,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 207.287,
+      "taskMs": 565.136
+    },
+    {
+      "round": 7,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 158.17399999999998,
+      "taskMs": 468.708
+    },
+    {
+      "round": 8,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 223.80700000000002,
+      "taskMs": 620.5120000000001
+    },
+    {
+      "round": 8,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 179.493,
+      "taskMs": 543.121
+    },
+    {
+      "round": 8,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 183.48700000000002,
+      "taskMs": 549.6030000000001
+    },
+    {
+      "round": 8,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 368.37399999999997,
+      "taskMs": 723.469
+    },
+    {
+      "round": 8,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 444.80600000000004,
+      "taskMs": 796.0619999999999
+    },
+    {
+      "round": 8,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 484.552,
+      "taskMs": 861.1880000000001
+    },
+    {
+      "round": 9,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 188.01199999999997,
+      "taskMs": 544.488
+    },
+    {
+      "round": 9,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 167.98399999999998,
+      "taskMs": 515.403
+    },
+    {
+      "round": 9,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 198.075,
+      "taskMs": 565.2439999999999
+    },
+    {
+      "round": 9,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 421.65500000000003,
+      "taskMs": 773.7590000000001
+    },
+    {
+      "round": 9,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 422.21500000000003,
+      "taskMs": 744.722
+    },
+    {
+      "round": 9,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 414.838,
+      "taskMs": 747.26
+    },
+    {
+      "round": 10,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 179.47299999999998,
+      "taskMs": 514.799
+    },
+    {
+      "round": 10,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 117.46900000000002,
+      "taskMs": 349.696
+    },
+    {
+      "round": 10,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 136.584,
+      "taskMs": 401.24199999999996
+    },
+    {
+      "round": 10,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 347.242,
+      "taskMs": 642.5869999999999
+    },
+    {
+      "round": 10,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 462.646,
+      "taskMs": 795.849
+    },
+    {
+      "round": 10,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 454.797,
+      "taskMs": 777.694
+    },
+    {
+      "round": 11,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 182.893,
+      "taskMs": 549.3249999999999
+    },
+    {
+      "round": 11,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 183.54099999999997,
+      "taskMs": 522.976
+    },
+    {
+      "round": 11,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 195.60899999999998,
+      "taskMs": 571.548
+    },
+    {
+      "round": 11,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 493.66900000000004,
+      "taskMs": 832.8539999999999
+    },
+    {
+      "round": 11,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 438.57099999999997,
+      "taskMs": 774.5799999999999
+    },
+    {
+      "round": 11,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 504.244,
+      "taskMs": 855.0790000000001
+    },
+    {
+      "round": 12,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 194.70399999999998,
+      "taskMs": 588.3009999999999
+    },
+    {
+      "round": 12,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 191.329,
+      "taskMs": 557.9060000000001
+    },
+    {
+      "round": 12,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 173.89,
+      "taskMs": 508.76199999999994
+    },
+    {
+      "round": 12,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 323.37300000000005,
+      "taskMs": 616.943
+    },
+    {
+      "round": 12,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 415.86,
+      "taskMs": 723.4159999999999
+    },
+    {
+      "round": 12,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 417.07,
+      "taskMs": 728.4699999999999
+    },
+    {
+      "round": 13,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 142.79500000000002,
+      "taskMs": 413.875
+    },
+    {
+      "round": 13,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 158.719,
+      "taskMs": 475.407
+    },
+    {
+      "round": 13,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 139.35899999999998,
+      "taskMs": 451.624
+    },
+    {
+      "round": 13,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 254.369,
+      "taskMs": 499.419
+    },
+    {
+      "round": 13,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 333.025,
+      "taskMs": 590.7549999999999
+    },
+    {
+      "round": 13,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 261.633,
+      "taskMs": 493.087
+    },
+    {
+      "round": 14,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 96.08900000000001,
+      "taskMs": 309.596
+    },
+    {
+      "round": 14,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 113.82499999999999,
+      "taskMs": 357.439
+    },
+    {
+      "round": 14,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 106.486,
+      "taskMs": 326.488
+    },
+    {
+      "round": 14,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 295.63800000000003,
+      "taskMs": 535.081
+    },
+    {
+      "round": 14,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 354.412,
+      "taskMs": 665.2679999999999
+    },
+    {
+      "round": 14,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 429.118,
+      "taskMs": 729.616
+    },
+    {
+      "round": 15,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 210.832,
+      "taskMs": 592.2729999999999
+    },
+    {
+      "round": 15,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 243.61200000000002,
+      "taskMs": 670.6220000000001
+    },
+    {
+      "round": 15,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 161.61399999999998,
+      "taskMs": 467.07199999999995
+    },
+    {
+      "round": 15,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 410.777,
+      "taskMs": 763.017
+    },
+    {
+      "round": 15,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 427.076,
+      "taskMs": 739.724
+    },
+    {
+      "round": 15,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 527.8190000000001,
+      "taskMs": 919.914
+    },
+    {
+      "round": 16,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 257.81800000000004,
+      "taskMs": 701.8720000000001
+    },
+    {
+      "round": 16,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 196.13,
+      "taskMs": 554.203
+    },
+    {
+      "round": 16,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 172.82,
+      "taskMs": 487.261
+    },
+    {
+      "round": 16,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 396.725,
+      "taskMs": 702.5490000000001
+    },
+    {
+      "round": 16,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 363.136,
+      "taskMs": 687.74
+    },
+    {
+      "round": 16,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 428.31,
+      "taskMs": 752.278
+    },
+    {
+      "round": 17,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 429.099,
+      "taskMs": 765.8280000000001
+    },
+    {
+      "round": 17,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 439.12800000000004,
+      "taskMs": 788.762
+    },
+    {
+      "round": 17,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 378.42600000000004,
+      "taskMs": 707.201
+    },
+    {
+      "round": 17,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 291.385,
+      "taskMs": 796.669
+    },
+    {
+      "round": 17,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 230.614,
+      "taskMs": 652.5219999999999
+    },
+    {
+      "round": 17,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 233.55100000000002,
+      "taskMs": 653.848
+    },
+    {
+      "round": 18,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 514.267,
+      "taskMs": 932.8259999999999
+    },
+    {
+      "round": 18,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 515.5770000000001,
+      "taskMs": 897.106
+    },
+    {
+      "round": 18,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 555.99,
+      "taskMs": 970.3960000000001
+    },
+    {
+      "round": 18,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 250.95000000000002,
+      "taskMs": 686.1189999999999
+    },
+    {
+      "round": 18,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 235.17400000000004,
+      "taskMs": 670.48
+    },
+    {
+      "round": 18,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 252.38,
+      "taskMs": 683.6909999999999
+    },
+    {
+      "round": 19,
+      "build": "#573, TrackedArray",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 260.49999999999994,
+      "taskMs": 712.255
+    },
+    {
+      "round": 19,
+      "build": "main, A()",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 256.07,
+      "taskMs": 712.722
+    },
+    {
+      "round": 19,
+      "build": "#573, trackedArray built-in",
+      "recycle": true,
+      "newBlocks": 1,
+      "scrollTop": 60000,
+      "scriptMs": 263.21,
+      "taskMs": 725.0000000000001
+    },
+    {
+      "round": 19,
+      "build": "#573, trackedArray built-in",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 593.6659999999999,
+      "taskMs": 1009.8909999999998
+    },
+    {
+      "round": 19,
+      "build": "#573, TrackedArray",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 603.236,
+      "taskMs": 1031.8139999999999
+    },
+    {
+      "round": 19,
+      "build": "main, A()",
+      "recycle": false,
+      "newBlocks": 1500,
+      "scrollTop": 60000,
+      "scriptMs": 467.797,
+      "taskMs": 865.452
+    }
+  ]
+}

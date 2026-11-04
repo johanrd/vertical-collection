@@ -1,0 +1,11 @@
+<div id="bench-scroller" style="height: 600px; overflow: auto; position: relative;">
+  <VerticalCollection
+    @items={{@model}}
+    @estimateHeight={{40}}
+    @staticHeight={{true}}
+    @shouldRecycle={{this.shouldRecycle}}
+    as |item|
+  >
+    <div class="bench-row" style="height: 40px;">{{item.n}}</div>
+  </VerticalCollection>
+</div>
