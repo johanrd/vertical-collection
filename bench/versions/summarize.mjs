@@ -25,6 +25,8 @@ const signed = (n) => `${n > 0 ? '+' : ''}${Math.round(n)}`;
 const lines = ['# Results', ''];
 for (const file of readdirSync(dir).filter((f) => f.startsWith('ember-')).sort()) {
   const data = JSON.parse(readFileSync(join(dir, file), 'utf8'));
+  // Mount runs in this file started their metrics after navigation. mount-ember-*.json replaces them.
+  data.runs = data.runs.filter((r) => !r.scenario.startsWith('Mount'));
   const builds = [...new Set(data.runs.map((r) => r.build))].sort();
   const scenarios = [...new Set(data.runs.map((r) => r.scenario))].sort();
   const values = (scenario, build, key) => data.runs.filter((r) => r.scenario === scenario && r.build === build).sort((a, b) => a.round - b.round).map((r) => r[key]);
@@ -50,6 +52,20 @@ for (const file of readdirSync(dir).filter((f) => f.startsWith('ember-')).sort()
         const d = paired(values(s, a, key), values(s, b, key));
         return `${signed(d.median)} (${signed(d.low)} to ${signed(d.high)})`;
       }).join(' | ')} |`);
+    }
+  }
+  const mountFile = join(dir, `mount-ember-${data.ember}.json`);
+  const mount = JSON.parse(readFileSync(mountFile, 'utf8')).runs;
+  const mountBuilds = [...new Set(mount.map((r) => r.build))].sort();
+  const mountValues = (scenario, build, key) => mount.filter((r) => r.scenario === scenario && r.build === build).sort((a, b) => a.round - b.round).map((r) => r[key]);
+  lines.push('', '### Mount, median ms (lowest to highest)', '', '| Scenario | Build | Script | All tasks |', '|---|---|---|---|');
+  for (const s of [...new Set(mount.map((r) => r.scenario))].sort()) {
+    for (const b of mountBuilds) {
+      const cell = (key) => {
+        const l = mountValues(s, b, key);
+        return `${Math.round(median(l))} (${Math.round(Math.min(...l))} to ${Math.round(Math.max(...l))})`;
+      };
+      lines.push(`| ${s} | ${b} | ${cell('scriptMs')} | ${cell('taskMs')} |`);
     }
   }
   lines.push('');

@@ -19,11 +19,11 @@ Script time, median ms. 15 rounds, in production builds. The last two columns ar
 |---|---|---|---|---|---|
 | Scroll, recycling on | 294 | 269 | 233 | +5 (-25 to +19) | -8 (-75 to +11) |
 | Scroll, recycling off | 355 | 347 | 350 | +17 (-12 to +29) | +19 (-18 to +60) |
-| Infinite scroll: append 20 rows at the end, 40 times | 47 | 52 | 53 | +3 (-1 to +5) | +3 (+0 to +7) |
+| Infinite scroll: append 20 rows at the end, 40 times | 47 | 52 | 53 | +3 (-1 to +5) | +3 (0 to +7) |
 | Prepend 20 rows, 40 times | 20 | 22 | 21 | +1 (-1 to +2) | +2 (-1 to +2) |
-| Filter and sort, 30 times | 25 | 25 | 25 | +0 (-1 to +1) | 0 (-1 to +1) |
-| Mount, 10 000 rows | 21 | 22 | 21 | +0 (-1 to +1) | 0 (-1 to +1) |
-| Mount with `@renderAll`, 5 000 rows | 33 | 72 | 32 | **+39 (+37 to +40)** | -1 (-3 to +1) |
+| Filter and sort, 30 times | 25 | 25 | 25 | 0 (-1 to +1) | 0 (-1 to +1) |
+| Mount, 10 000 rows | 22 | 23 | 23 | 0 (0 to +1) | 0 (0 to +1) |
+| Mount with `@renderAll`, 5 000 rows | 34 | 80 | 34 | **+46 (+38 to +56)** | +1 (0 to +2) |
 
 - **v5 and v7:** no clear difference in any scenario. The infinite scroll interval touches 0.
 - **v6:** one clear difference, `@renderAll`, which adds 39 ms of script and 37 ms of all tasks (about 7%) at 5 000 rows.
@@ -32,19 +32,20 @@ Script time, median ms. 15 rounds, in production builds. The last two columns ar
 
 ## Cause of the `@renderAll` difference
 
-`@tracked` on the row components, not the array. Mount with `@renderAll`, 5 000 rows, 15 rounds, unminified production builds:
+`@tracked` on the row components, not the array. Mount with `@renderAll`, 5 000 rows, 15 rounds, production builds:
 
-| Build | Script, median (range) | All tasks, median | JS from a CPU profile, median of 5 |
+| Build | Script, median (range) | All tasks, median (range) | JS from a CPU profile, median of 5 unminified runs |
 |---|---|---|---|
-| v5 | 44 ms (39 to 47) | 522 ms | 421 ms |
-| v6 | 82 ms (77 to 87) | 562 ms | 462 ms |
-| v6 with only the built-in array | 83 ms (79 to 90) | 555 ms | 450 ms |
-| v6 with only `tracked()` | 46 ms (40 to 47) | 518 ms | 404 ms |
-| v7 | 46 ms (40 to 50) | 517 ms | 409 ms |
+| v5 | 34 ms (32 to 38) | 546 ms (519 to 632) | 421 ms |
+| v6 | 80 ms (70 to 93) | 580 ms (543 to 636) | 462 ms |
+| v6 with only the built-in array | 78 ms (71 to 104) | 588 ms (557 to 727) | 450 ms |
+| v6 with only `tracked()` | 33 ms (32 to 37) | 538 ms (527 to 584) | 404 ms |
+| v7 | 34 ms (31 to 39) | 557 ms (518 to 719) | 409 ms |
 
 - It is about 8 µs for each row created, so it shows only when many rows are created at once. Normal lists create a few.
 - No single function explains it in the profiles. The exact mechanism inside `@tracked` was not isolated.
-- `ScriptDuration` shows only a part of the JS on mount. Use the profile column for the total.
+- `ScriptDuration` shows only a part of the JS on mount. Use all tasks or the profile column for the total.
+- The first mount results had a measurement error: metrics started after navigation, so a few runs lost most of their work. The mount numbers here are from [a rerun](results/mount-ember-7.4.0.json), with metrics started first. The mount rows in `results/ember-7.4.0.json` and the script column in `results/render-all-cause-ember-7.4.0.json` have that error.
 
 Raw runs and profiles: [`results/render-all-cause-ember-7.4.0.json`](results/render-all-cause-ember-7.4.0.json). Run with `BENCH_CAUSE=1`.
 
@@ -74,5 +75,6 @@ Needs `pnpm` and Chrome. It takes about 40 minutes without other load on the mac
 ```sh
 node bench/versions/run.mjs --ember 7.4.0 --rounds 15
 BENCH_ROW_CHANGE=1 node bench/versions/run.mjs --ember 7.4.0
+BENCH_MOUNT=1 node bench/versions/run.mjs --ember 7.4.0
 node bench/versions/summarize.mjs
 ```

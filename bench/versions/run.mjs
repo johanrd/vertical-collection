@@ -168,7 +168,8 @@ async function startChrome() {
 }
 
 async function openPage({ send }, url) {
-  const { targetId } = await send('Target.createTarget', { url });
+  // Metrics start before navigation, so a mount is measured from its first task.
+  const { targetId } = await send('Target.createTarget', { url: 'about:blank' });
   const { sessionId } = await send('Target.attachToTarget', { targetId, flatten: true });
   const call = (method, params) => send(method, params, sessionId);
   const evaluate = async (expression) => {
@@ -177,7 +178,10 @@ async function openPage({ send }, url) {
     return result.value;
   };
   await call('Performance.enable');
-  for (let i = 0; i < 2400 && !(await evaluate('Boolean(window.__bench)')); i++) {
+  await call('Page.navigate', { url });
+  for (let i = 0; i < 2400; i++) {
+    const loaded = await evaluate('Boolean(window.__bench)').catch(() => false);
+    if (loaded) break;
     await new Promise((resolve) => setTimeout(resolve, 50));
   }
   await evaluate('window.__bench.ready()');
@@ -200,7 +204,7 @@ const shuffle = (list) => list.map((v) => [Math.random(), v]).sort((a, b) => a[0
 
 const builds = [];
 const trees = [];
-for (const b of CAUSE ? CAUSE_BUILDS : process.env.BENCH_ROW_CHANGE ? BUILDS.slice(2) : BUILDS) {
+for (const b of CAUSE || process.env.BENCH_MOUNT ? CAUSE_BUILDS : process.env.BENCH_ROW_CHANGE ? BUILDS.slice(2) : BUILDS) {
   console.log(`build: ${b.name}`);
   const { dir, dist } = build(b);
   trees.push(dir);
@@ -284,6 +288,28 @@ if (CAUSE) {
     };
   }
   writeFileSync(join(here, 'results', `render-all-cause-ember-${values.ember}.json`), JSON.stringify({ ember: values.ember, cause, profiles }, null, 2) + '\n');
+  browser.ws.close();
+  browser.chrome.kill();
+  for (const { server } of builds) server.close();
+  for (const dir of trees) sh(`git worktree remove --force "${dir}"`, repo);
+  process.exit(0);
+}
+if (process.env.BENCH_MOUNT) {
+  const mount = [];
+  for (let round = 0; round < 15; round++) {
+    for (const scenario of shuffle(SCENARIOS.filter((s) => !s.action))) {
+      for (const b of shuffle(builds)) {
+        const page = await openPage(browser, `http://localhost:${b.port}/?${scenario.query}#/version-benchmark`);
+        const m = await page.metrics();
+        const rows = await page.evaluate("document.querySelectorAll('.bench-row').length");
+        await page.close();
+        const run = { round, scenario: scenario.name, build: b.name, rows, scriptMs: m.ScriptDuration * 1000, taskMs: m.TaskDuration * 1000 };
+        mount.push(run);
+        console.log(JSON.stringify(run));
+      }
+    }
+  }
+  writeFileSync(join(here, 'results', `mount-ember-${values.ember}.json`), JSON.stringify({ ember: values.ember, chrome: execSync(`"${values.chrome}" --version`).toString().trim(), runs: mount }, null, 2) + '\n');
   browser.ws.close();
   browser.chrome.kill();
   for (const { server } of builds) server.close();
