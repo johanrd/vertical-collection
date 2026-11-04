@@ -26,7 +26,7 @@ Script time, median ms. 15 rounds, in production builds. The last two columns ar
 | Mount with `@renderAll`, 5 000 rows | 34 | 80 | 34 | **+46 (+38 to +56)** | +1 (0 to +2) |
 
 - **v5 and v7:** no clear difference in any scenario. The infinite scroll interval touches 0.
-- **v6:** one clear difference, `@renderAll`, which adds 39 ms of script and 37 ms of all tasks (about 7%) at 5 000 rows.
+- **v6:** one clear difference, `@renderAll`, which adds 46 ms of script at 5 000 rows. All tasks go from 546 ms to 580 ms, about 6%.
 - **Long frames over 25 ms:** the median is 0 in every scenario and build.
 - **Scrolling is noisy.** The same build ranges from 181 to 417 ms in one scenario, and all builds drift together between rounds. Use the paired differences, not the medians. `233 ms` for v7 does not show that v7 is faster.
 
