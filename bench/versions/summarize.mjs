@@ -23,7 +23,7 @@ function paired(a, b) {
 const signed = (n) => `${n > 0 ? '+' : ''}${Math.round(n)}`;
 
 const lines = ['# Results', ''];
-for (const file of readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
+for (const file of readdirSync(dir).filter((f) => f.startsWith('ember-')).sort()) {
   const data = JSON.parse(readFileSync(join(dir, file), 'utf8'));
   const builds = [...new Set(data.runs.map((r) => r.build))].sort();
   const scenarios = [...new Set(data.runs.map((r) => r.scenario))].sort();

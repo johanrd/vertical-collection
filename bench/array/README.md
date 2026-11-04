@@ -29,7 +29,7 @@ Ember 6.12 and 7.4, 300 scroll steps, script time. Differences are paired by rou
 
 ## At larger sizes
 
-One row change, array only, on Ember 6.12. Each step reads the whole array, so the cost grows in step with its size. `TrackedArray` and the built-in stay 5 to 7 times `A()`.
+One row change, array only, on Ember 6.12. Each step reads the whole array, so the cost grows in step with its size. `TrackedArray` and the built-in are 3 to 4 times `A()` at 20 rows, and 5 to 7 times at 200 rows and more.
 
 | Rows in the array | `A()` | `TrackedArray` | Built-in |
 |---|---|---|---|
