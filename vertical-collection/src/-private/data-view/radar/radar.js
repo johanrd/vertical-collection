@@ -121,9 +121,7 @@ export default class Radar {
       this._domPool = document.createDocumentFragment();
     }
 
-    // The pool. virtualComponents is a copy for the template, and the first update adds all
-    // of its components before it makes that copy.
-    this._published = false;
+    // The pool. The radar changes this array in place, and virtualComponents tells the template.
     this._components = [
       this._occludedContentBefore,
       this._occludedContentAfter,
@@ -131,8 +129,7 @@ export default class Radar {
     this.orderedComponents = [];
 
     this._updateVirtualComponents();
-    this.virtualComponents = this._components.slice();
-    this._published = true;
+    this.virtualComponents = this._components;
 
     if (DEBUG) {
       this._debugDidUpdate = null;
@@ -159,6 +156,7 @@ export default class Radar {
     this._occludedContentAfter.destroy();
 
     this.orderedComponents = null;
+    this._components = null;
     this.virtualComponents = null;
 
     if (this._started) {
@@ -613,7 +611,7 @@ export default class Radar {
           // eslint-disable-next-line ember/no-runloop
           run(() => {
             this._components.splice(this._components.indexOf(component), 1);
-            this._publishComponents();
+            this.virtualComponents = this._components;
           });
           _componentPool.splice(i, 1);
         }
@@ -640,12 +638,6 @@ export default class Radar {
         : '';
   }
 
-  _publishComponents() {
-    if (this._published) {
-      this.virtualComponents = this._components.slice();
-    }
-  }
-
   _appendComponent(component) {
     const {
       _occludedContentAfter,
@@ -665,7 +657,7 @@ export default class Radar {
       );
     } else {
       this._components.splice(this._components.length - 1, 0, component);
-      this._publishComponents();
+      this.virtualComponents = this._components;
       component.rendered = true;
 
       // shouldRecycle=false breaks UI when scrolling the elements fast.
@@ -713,7 +705,7 @@ export default class Radar {
       );
     } else {
       this._components.splice(this._components.length - 1, 0, component);
-      this._publishComponents();
+      this.virtualComponents = this._components;
       component.rendered = true;
 
       // Components that are both new and prepended still need to be rendered at the end because Glimmer.
