@@ -102,6 +102,12 @@ const LEAN_BUILDS = [
   { name: 'v6, without dependencies', ref: V6, patch: withoutDependencies },
   BUILDS[2],
 ];
+const PLAIN = process.env.BENCH_PLAIN;
+const PLAIN_BUILDS = [
+  BUILDS[0],
+  { name: '#573 before, TrackedArray', ref: '7377e7a' },
+  { name: '#573, plain array', ref: '20ebe9b' },
+];
 const CAUSE = process.env.BENCH_CAUSE;
 const CAUSE_BUILDS = [
   BUILDS[0],
@@ -212,7 +218,7 @@ const shuffle = (list) => list.map((v) => [Math.random(), v]).sort((a, b) => a[0
 
 const builds = [];
 const trees = [];
-for (const b of LEAN ? LEAN_BUILDS : CAUSE || process.env.BENCH_MOUNT ? CAUSE_BUILDS : process.env.BENCH_ROW_CHANGE ? BUILDS.slice(2) : BUILDS) {
+for (const b of PLAIN ? PLAIN_BUILDS : LEAN ? LEAN_BUILDS : CAUSE || process.env.BENCH_MOUNT ? CAUSE_BUILDS : process.env.BENCH_ROW_CHANGE ? BUILDS.slice(2) : BUILDS) {
   console.log(`build: ${b.name}`);
   const { dir, dist } = build(b);
   trees.push(dir);
@@ -351,6 +357,6 @@ for (const dir of trees) sh(`git worktree remove --force "${dir}"`, repo);
 const out = join(here, 'results');
 mkdirSync(out, { recursive: true });
 writeFileSync(
-  join(out, `${LEAN ? 'without-dependencies-' : ''}ember-${values.ember}.json`),
+  join(out, `${PLAIN ? 'plain-array-' : LEAN ? 'without-dependencies-' : ''}ember-${values.ember}.json`),
   JSON.stringify({ ember: values.ember, rounds: Number(values.rounds), v5: V5, v6: V6, chrome: execSync(`"${values.chrome}" --version`).toString().trim(), runs }, null, 2) + '\n',
 );

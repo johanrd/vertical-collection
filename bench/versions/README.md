@@ -71,7 +71,24 @@ The test suite passes, 243 of 243, on Ember 3.28, 6.12, 7.4 and 7.5 beta. The re
 
 - With recycling off, the trial is clearly faster than v6, and shows no clear difference from v5.
 - The `@renderAll` difference stays. So it does not come from `decorator-transforms`, but from the field form of `tracked` compared with the `tracked()` function.
-- This trial changes the array and the fields together, so it does not show which change helps with recycling off.
+- This trial changes the array and the fields together. The next section tests the array alone.
+
+## The plain array alone
+
+#573 with only the plain array, in commit `20ebe9b`. The results are for Ember 7.4, with 15 rounds, as paired differences with 95% bootstrap intervals. The machine was slower in this run, so compare only within this table. Raw runs: [`results/plain-array-ember-7.4.0.json`](results/plain-array-ember-7.4.0.json).
+
+| Script time | Plain array minus `TrackedArray` | Plain array minus v5 |
+|---|---|---|
+| Scroll, recycling on | +6 (-24 to +25) | -6 (-45 to +35) |
+| Scroll, recycling off | -2 (-46 to +36) | +3 (-18 to +37) |
+| Infinite scroll, append | -2 (-9 to +12) | +1 (-7 to +7) |
+| Prepend | -3 (-6 to +3) | -1 (-6 to +2) |
+| Filter and sort | +1 (-2 to +6) | +2 (-3 to +4) |
+| Mount, 10 000 rows | 0 (-1 to 0) | 0 (0 to 0) |
+| Mount with `@renderAll`, 5 000 rows | +1 (0 to +3) | **+40 (+38 to +42)** |
+
+- The plain array gives no clear speed gain in script time. So the gain with recycling off in the trial above did not come from the array alone. It can come from the fields, or from noise.
+- The reason to use a plain array is fewer dependencies and no Proxy, not speed.
 
 ## Is this an upstream problem?
 
