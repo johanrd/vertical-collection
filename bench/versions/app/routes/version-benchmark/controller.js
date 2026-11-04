@@ -78,6 +78,10 @@ export default class extends Controller {
           this.items = [...this.items, ...more(20)];
         }),
       prepend: () => repeat(40, () => (this.items = [...more(20), ...this.items])),
+      refetchAppend: () =>
+        repeat(40, () => {
+          this.items = [...this.items.map((row) => ({ ...row })), ...more(20)];
+        }),
       replace: () => {
         const all = this.items;
         return repeat(30, (i) => {

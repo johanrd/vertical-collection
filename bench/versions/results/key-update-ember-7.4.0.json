@@ -1,0 +1,1359 @@
+{
+  "ember": "7.4.0",
+  "rounds": 25,
+  "v5": "24ee6d8",
+  "v6": "c7ed3f7",
+  "chrome": "Google Chrome 156.0.8078.80",
+  "runs": [
+    {
+      "round": 0,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 26.767,
+      "taskMs": 81.09300000000002
+    },
+    {
+      "round": 0,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 15.709000000000001,
+      "taskMs": 63.464000000000006
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 28.156999999999996,
+      "taskMs": 110.901
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 24.627,
+      "taskMs": 93.52199999999999
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 41.357000000000006,
+      "taskMs": 128.18500000000003
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 64.723,
+      "taskMs": 170.35500000000002
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.002000000000002,
+      "taskMs": 61.650000000000006
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 28.249000000000002,
+      "taskMs": 114.59400000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 46.95199999999999,
+      "taskMs": 136.878
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 54.851,
+      "taskMs": 147.523
+    },
+    {
+      "round": 1,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 33.791000000000004,
+      "taskMs": 88.23400000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 17.615,
+      "taskMs": 78.80999999999999
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 49.826,
+      "taskMs": 144.363
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 54.218,
+      "taskMs": 156.065
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.170999999999996,
+      "taskMs": 108.711
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 30.932,
+      "taskMs": 121.848
+    },
+    {
+      "round": 2,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 35.473,
+      "taskMs": 104.614
+    },
+    {
+      "round": 2,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 19.481,
+      "taskMs": 77.326
+    },
+    {
+      "round": 3,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 33.769,
+      "taskMs": 96.477
+    },
+    {
+      "round": 3,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 17.833,
+      "taskMs": 71.161
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 49.535,
+      "taskMs": 141.75799999999998
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 56.976,
+      "taskMs": 162.326
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.437,
+      "taskMs": 86.41399999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.688000000000002,
+      "taskMs": 103.212
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.990999999999996,
+      "taskMs": 101.32199999999999
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.921,
+      "taskMs": 105.775
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 70.3,
+      "taskMs": 184.669
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 68.19600000000001,
+      "taskMs": 190.714
+    },
+    {
+      "round": 4,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 34.514,
+      "taskMs": 105.344
+    },
+    {
+      "round": 4,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 21.378999999999998,
+      "taskMs": 90.928
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 60.751000000000005,
+      "taskMs": 164.126
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 56.12200000000001,
+      "taskMs": 165.66
+    },
+    {
+      "round": 5,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 26.776999999999997,
+      "taskMs": 80.378
+    },
+    {
+      "round": 5,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 28.443999999999996,
+      "taskMs": 111.091
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.422000000000004,
+      "taskMs": 68.914
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.802999999999997,
+      "taskMs": 75.46899999999998
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 63.415,
+      "taskMs": 167.403
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 59.785,
+      "taskMs": 161.021
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.464999999999996,
+      "taskMs": 78.92299999999999
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.029,
+      "taskMs": 93.26199999999999
+    },
+    {
+      "round": 6,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 17.219,
+      "taskMs": 66.203
+    },
+    {
+      "round": 6,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 18.729,
+      "taskMs": 57.524
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 41.564,
+      "taskMs": 129.08
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 69.57900000000001,
+      "taskMs": 185.261
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 29.397000000000002,
+      "taskMs": 121.433
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.257,
+      "taskMs": 111.77700000000002
+    },
+    {
+      "round": 7,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 30.057,
+      "taskMs": 93.563
+    },
+    {
+      "round": 7,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 20.692,
+      "taskMs": 87.368
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 33.407,
+      "taskMs": 129.605
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 20.061,
+      "taskMs": 80.66600000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 61.246,
+      "taskMs": 169.62199999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 69.42499999999998,
+      "taskMs": 187.43699999999998
+    },
+    {
+      "round": 8,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 16.021,
+      "taskMs": 72.97399999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 36.017999999999994,
+      "taskMs": 99.54899999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 19.818,
+      "taskMs": 82.845
+    },
+    {
+      "round": 9,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 32.969,
+      "taskMs": 96.87399999999998
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 20.595,
+      "taskMs": 80.63900000000001
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.051,
+      "taskMs": 62.11
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.69,
+      "taskMs": 131.71099999999998
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 64.93400000000001,
+      "taskMs": 171.319
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 30.438999999999997,
+      "taskMs": 116.802
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 32.818,
+      "taskMs": 134.14900000000003
+    },
+    {
+      "round": 10,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 17.902,
+      "taskMs": 75.047
+    },
+    {
+      "round": 10,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 39.887,
+      "taskMs": 111.484
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 67.655,
+      "taskMs": 181.30100000000002
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 59.43999999999999,
+      "taskMs": 156.48100000000002
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 31.259999999999994,
+      "taskMs": 118.061
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 28.095,
+      "taskMs": 108.262
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 47.038999999999994,
+      "taskMs": 139.93999999999997
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 48.553999999999995,
+      "taskMs": 145.12800000000001
+    },
+    {
+      "round": 11,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.756999999999998,
+      "taskMs": 73.56199999999998
+    },
+    {
+      "round": 11,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 13.874999999999998,
+      "taskMs": 60.312000000000005
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.240000000000002,
+      "taskMs": 93.16199999999999
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.65,
+      "taskMs": 91.81700000000001
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 56.236,
+      "taskMs": 154.471
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 77.441,
+      "taskMs": 193.573
+    },
+    {
+      "round": 12,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.135000000000005,
+      "taskMs": 99.347
+    },
+    {
+      "round": 12,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.854,
+      "taskMs": 80.438
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 74.321,
+      "taskMs": 194.71
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 51.91,
+      "taskMs": 150.89600000000002
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.903000000000002,
+      "taskMs": 108.17200000000001
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 32.972,
+      "taskMs": 128.925
+    },
+    {
+      "round": 13,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 32.644999999999996,
+      "taskMs": 92.45500000000001
+    },
+    {
+      "round": 13,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 15.138000000000002,
+      "taskMs": 67.03600000000002
+    },
+    {
+      "round": 14,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 37.337,
+      "taskMs": 99.47399999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.778,
+      "taskMs": 103.79599999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 68.351,
+      "taskMs": 174.219
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 80.209,
+      "taskMs": 214.232
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 33.484,
+      "taskMs": 133.481
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 29.883000000000003,
+      "taskMs": 114.219
+    },
+    {
+      "round": 15,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.435000000000002,
+      "taskMs": 103.358
+    },
+    {
+      "round": 15,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 40.661,
+      "taskMs": 110.417
+    },
+    {
+      "round": 15,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.330000000000002,
+      "taskMs": 99.30200000000002
+    },
+    {
+      "round": 15,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 29.373,
+      "taskMs": 118.267
+    },
+    {
+      "round": 15,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 65.65599999999999,
+      "taskMs": 183.98700000000002
+    },
+    {
+      "round": 15,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 83.22200000000001,
+      "taskMs": 218.205
+    },
+    {
+      "round": 16,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 33.678,
+      "taskMs": 123.62600000000002
+    },
+    {
+      "round": 16,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 33.242000000000004,
+      "taskMs": 128.743
+    },
+    {
+      "round": 16,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.333,
+      "taskMs": 104.57900000000001
+    },
+    {
+      "round": 16,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 37.315,
+      "taskMs": 103.571
+    },
+    {
+      "round": 16,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 74.518,
+      "taskMs": 201.854
+    },
+    {
+      "round": 16,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 59.747,
+      "taskMs": 162.58800000000002
+    },
+    {
+      "round": 17,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 56.123999999999995,
+      "taskMs": 162.94599999999997
+    },
+    {
+      "round": 17,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 65.623,
+      "taskMs": 175.873
+    },
+    {
+      "round": 17,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.316999999999997,
+      "taskMs": 91.145
+    },
+    {
+      "round": 17,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 38.816,
+      "taskMs": 116.065
+    },
+    {
+      "round": 17,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 32.696000000000005,
+      "taskMs": 132.71099999999998
+    },
+    {
+      "round": 17,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 29.011000000000003,
+      "taskMs": 113.063
+    },
+    {
+      "round": 18,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 30.237000000000002,
+      "taskMs": 116.476
+    },
+    {
+      "round": 18,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 30.264,
+      "taskMs": 116.38999999999999
+    },
+    {
+      "round": 18,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 70.148,
+      "taskMs": 197.058
+    },
+    {
+      "round": 18,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 72.70599999999999,
+      "taskMs": 201.76900000000003
+    },
+    {
+      "round": 18,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.025,
+      "taskMs": 101.507
+    },
+    {
+      "round": 18,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 38.766999999999996,
+      "taskMs": 111.57799999999999
+    },
+    {
+      "round": 19,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 57.56699999999999,
+      "taskMs": 159.526
+    },
+    {
+      "round": 19,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 69.306,
+      "taskMs": 180.21499999999997
+    },
+    {
+      "round": 19,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 20.976,
+      "taskMs": 90.37399999999998
+    },
+    {
+      "round": 19,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 44.48300000000001,
+      "taskMs": 128.859
+    },
+    {
+      "round": 19,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 33.71,
+      "taskMs": 130.24599999999998
+    },
+    {
+      "round": 19,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 33.702,
+      "taskMs": 132.58100000000002
+    },
+    {
+      "round": 20,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 31.213,
+      "taskMs": 120.907
+    },
+    {
+      "round": 20,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 28.079,
+      "taskMs": 115.91600000000001
+    },
+    {
+      "round": 20,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 73.83300000000001,
+      "taskMs": 189.87900000000002
+    },
+    {
+      "round": 20,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 79.07199999999999,
+      "taskMs": 210.963
+    },
+    {
+      "round": 20,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 43.903,
+      "taskMs": 120.662
+    },
+    {
+      "round": 20,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.265,
+      "taskMs": 96.688
+    },
+    {
+      "round": 21,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.291,
+      "taskMs": 95.677
+    },
+    {
+      "round": 21,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 36.596999999999994,
+      "taskMs": 103.518
+    },
+    {
+      "round": 21,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 35.865,
+      "taskMs": 140.506
+    },
+    {
+      "round": 21,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 29.954999999999995,
+      "taskMs": 125.914
+    },
+    {
+      "round": 21,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 75.255,
+      "taskMs": 204.42300000000003
+    },
+    {
+      "round": 21,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 63.687999999999995,
+      "taskMs": 188.166
+    },
+    {
+      "round": 22,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 18.298000000000002,
+      "taskMs": 78.574
+    },
+    {
+      "round": 22,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 39.915000000000006,
+      "taskMs": 119.62800000000001
+    },
+    {
+      "round": 22,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 71.878,
+      "taskMs": 194.017
+    },
+    {
+      "round": 22,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 52.466,
+      "taskMs": 154.772
+    },
+    {
+      "round": 22,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.973,
+      "taskMs": 103.66799999999998
+    },
+    {
+      "round": 22,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.041,
+      "taskMs": 111.566
+    },
+    {
+      "round": 23,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 19.715,
+      "taskMs": 81.08299999999998
+    },
+    {
+      "round": 23,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 39.908,
+      "taskMs": 119.44099999999999
+    },
+    {
+      "round": 23,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.372999999999998,
+      "taskMs": 108.55999999999999
+    },
+    {
+      "round": 23,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.911000000000005,
+      "taskMs": 107.372
+    },
+    {
+      "round": 23,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 58.882000000000005,
+      "taskMs": 159.625
+    },
+    {
+      "round": 23,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 67.099,
+      "taskMs": 177.352
+    },
+    {
+      "round": 24,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "#585",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 68.80499999999999,
+      "taskMs": 179.51600000000002
+    },
+    {
+      "round": 24,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "main",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 71.257,
+      "taskMs": 189.164
+    },
+    {
+      "round": 24,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "main",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.867,
+      "taskMs": 97.65899999999999
+    },
+    {
+      "round": 24,
+      "scenario": "Refetch: new objects plus 20 rows, 40 times",
+      "build": "#585",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 41.452000000000005,
+      "taskMs": 105.848
+    },
+    {
+      "round": 24,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "#585",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 32.093999999999994,
+      "taskMs": 128.94
+    },
+    {
+      "round": 24,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "main",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 31.825000000000006,
+      "taskMs": 123.25699999999999
+    }
+  ]
+}

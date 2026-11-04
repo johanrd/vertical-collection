@@ -90,6 +90,19 @@ The test suite passes, 243 of 243, on Ember 3.28, 6.12, 7.4 and 7.5 beta. The re
 - The plain array gives no clear speed gain in script time. So the gain with recycling off in the trial above did not come from the array alone. It can come from the fields, or from noise.
 - The reason to use a plain array is fewer dependencies and no Proxy, not speed.
 
+## Rows that keep their keys (#585)
+
+`main` at `52bbd57` against #585 at `bcb33ab`, on Ember 7.4. 25 rounds, 2 000 rows, `@key="id"`, as paired differences with 95% bootstrap intervals. Raw runs: [`results/key-update-ember-7.4.0.json`](results/key-update-ember-7.4.0.json).
+
+| 40 changes | Script, #585 minus `main` | All tasks, #585 minus `main` |
+|---|---|---|
+| Append with the same objects | +2 ms (-7 to +12) | +2 ms (-18 to +16) |
+| Prepend with the same objects | 0 ms (-2 to +2) | 0 ms (-10 to +8) |
+| Refetch: new objects plus 20 rows | **+16 ms (+13 to +18)** | **+14 ms (+8 to +25)** |
+
+- With the same objects, there is no clear cost.
+- A refetch costs about 0.4 ms more each time, because #585 renders the new objects. `main` does less work there because it leaves the rows stale.
+
 ## Is this an upstream problem?
 
 Not one that shows in this use. `trackedArray` has a tag per index, but each reader also consumes the collection tag, and each write dirties it. The index tags look redundant, from reading the code.

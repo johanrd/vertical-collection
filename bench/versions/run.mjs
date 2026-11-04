@@ -108,6 +108,11 @@ const PLAIN_BUILDS = [
   { name: '#573 before, TrackedArray', ref: '7377e7a' },
   { name: '#573, plain array', ref: '20ebe9b' },
 ];
+const KEYS = process.env.BENCH_KEYS;
+const KEYS_BUILDS = [
+  { name: 'main', ref: '52bbd57' },
+  { name: '#585', ref: 'bcb33ab' },
+];
 const CAUSE = process.env.BENCH_CAUSE;
 const CAUSE_BUILDS = [
   BUILDS[0],
@@ -214,11 +219,17 @@ const SCENARIOS = [
   { name: 'Mount with @renderAll, 5 000 rows', query: 'rows=5000&renderAll=true' },
 ];
 
+const KEY_SCENARIOS = [
+  { name: 'Infinite scroll: append 20 rows at the end, 40 times', query: 'rows=2000&key=id', action: 'append' },
+  { name: 'Prepend 20 rows, 40 times', query: 'rows=2000&key=id', action: 'prepend' },
+  { name: 'Refetch: new objects plus 20 rows, 40 times', query: 'rows=2000&key=id', action: 'refetchAppend' },
+];
+
 const shuffle = (list) => list.map((v) => [Math.random(), v]).sort((a, b) => a[0] - b[0]).map(([, v]) => v);
 
 const builds = [];
 const trees = [];
-for (const b of PLAIN ? PLAIN_BUILDS : LEAN ? LEAN_BUILDS : CAUSE || process.env.BENCH_MOUNT ? CAUSE_BUILDS : process.env.BENCH_ROW_CHANGE ? BUILDS.slice(2) : BUILDS) {
+for (const b of KEYS ? KEYS_BUILDS : PLAIN ? PLAIN_BUILDS : LEAN ? LEAN_BUILDS : CAUSE || process.env.BENCH_MOUNT ? CAUSE_BUILDS : process.env.BENCH_ROW_CHANGE ? BUILDS.slice(2) : BUILDS) {
   console.log(`build: ${b.name}`);
   const { dir, dist } = build(b);
   trees.push(dir);
@@ -332,7 +343,7 @@ if (process.env.BENCH_MOUNT) {
 }
 const runs = [];
 for (let round = 0; round < Number(values.rounds); round++) {
-  for (const scenario of shuffle(SCENARIOS)) {
+  for (const scenario of shuffle(KEYS ? KEY_SCENARIOS : SCENARIOS)) {
     for (const b of shuffle(builds)) {
       const page = await openPage(browser, `http://localhost:${b.port}/?${scenario.query}#/version-benchmark`);
       const before = scenario.action ? await page.metrics() : { ScriptDuration: 0, TaskDuration: 0 };
@@ -357,6 +368,6 @@ for (const dir of trees) sh(`git worktree remove --force "${dir}"`, repo);
 const out = join(here, 'results');
 mkdirSync(out, { recursive: true });
 writeFileSync(
-  join(out, `${PLAIN ? 'plain-array-' : LEAN ? 'without-dependencies-' : ''}ember-${values.ember}.json`),
+  join(out, `${KEYS ? 'key-update-' : PLAIN ? 'plain-array-' : LEAN ? 'without-dependencies-' : ''}ember-${values.ember}.json`),
   JSON.stringify({ ember: values.ember, rounds: Number(values.rounds), v5: V5, v6: V6, chrome: execSync(`"${values.chrome}" --version`).toString().trim(), runs }, null, 2) + '\n',
 );
