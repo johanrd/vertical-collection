@@ -118,7 +118,7 @@ async function openPage({ send }, url) {
     return result.value;
   };
   await call('Performance.enable');
-  for (let i = 0; i < 200 && !(await evaluate('Boolean(window.__bench)')); i++) {
+  for (let i = 0; i < 2400 && !(await evaluate('Boolean(window.__bench)')); i++) {
     await new Promise((resolve) => setTimeout(resolve, 50));
   }
   await evaluate('window.__bench.ready()');
@@ -158,6 +158,46 @@ async function micro(port) {
   }
   await page.close();
   return raw;
+}
+if (process.env.BENCH_SCALE) {
+  const SIZES = [20, 200, 2000, 10000];
+  const page = await openPage(browser, `http://localhost:${builds[1].port}/?rows=100#/array-benchmark`);
+  const names = await page.evaluate('window.__bench.implementations');
+  const scaling = {};
+  for (const size of SIZES) {
+    scaling[size] = Object.fromEntries(names.map((n) => [n, []]));
+    const steps = Math.max(200, Math.round(40000 / size));
+    for (const n of names) await page.evaluate(`window.__bench.rowChange(${JSON.stringify(n)}, ${steps}, ${size})`);
+    for (let r = 0; r < 9; r++) {
+      for (const n of shuffle(names)) {
+        scaling[size][n].push(await page.evaluate(`window.__bench.rowChange(${JSON.stringify(n)}, ${steps}, ${size})`));
+      }
+    }
+    console.log(size, JSON.stringify(Object.fromEntries(names.map((n) => [n, quantile(scaling[size][n], 0.5)]))));
+  }
+  await page.close();
+  const renderAll = [];
+  for (const rows of [1000, 5000, 10000]) {
+    for (let round = 0; round < 7; round++) {
+      for (const b of shuffle(builds)) {
+        const start = performance.now();
+        const p = await openPage(browser, `http://localhost:${b.port}/?rows=${rows}&renderAll=true#/array-benchmark`);
+        const wallMs = performance.now() - start;
+        const m = await p.metrics();
+        const count = await p.evaluate("document.querySelectorAll('.bench-row').length");
+        await p.close();
+        const run = { rows, round, build: b.name, count, wallMs, scriptMs: m.ScriptDuration * 1000, taskMs: m.TaskDuration * 1000 };
+        renderAll.push(run);
+        console.log(JSON.stringify(run));
+      }
+    }
+  }
+  writeFileSync(join(here, 'results', `scale-ember-${values.ember}.json`), JSON.stringify({ ember: values.ember, scaling, renderAll }, null, 2) + '\n');
+  browser.ws.close();
+  browser.chrome.kill();
+  for (const { server } of [...builds, dev]) server.close();
+  for (const dir of trees) sh(`git worktree remove --force "${dir}"`, repo);
+  process.exit(0);
 }
 console.log('array test');
 const rowChange = { production: await micro(builds[1].port), development: await micro(dev.port) };

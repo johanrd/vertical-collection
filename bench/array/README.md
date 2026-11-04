@@ -27,6 +27,21 @@ Ember 6.12 and 7.4, 300 scroll steps, script time. Differences are paired by rou
 - In isolation, one row change costs 1.6 µs with `A()`, 6.5 µs with `TrackedArray` and 5.3 µs with the built-in (production build). This is the cost per row added and removed, not per scroll step.
 - 1 500 row changes at about 5 µs more is about 7 ms. That is only part of the 55 to 62 ms that #573 adds with recycling off. This benchmark does not show where the rest goes.
 
+## At larger sizes
+
+One row change, array only, on Ember 6.12. Each step reads the whole array, so the cost grows in step with its size. `TrackedArray` and the built-in stay 5 to 7 times `A()`.
+
+| Rows in the array | `A()` | `TrackedArray` | Built-in |
+|---|---|---|---|
+| 20 | 1.6 µs | 6.6 µs | 5.4 µs |
+| 200 | 8.5 µs | 53 µs | 43 µs |
+| 2 000 | 74 µs | 511 µs | 407 µs |
+| 10 000 | 360 µs | 2 527 µs | 2 039 µs |
+
+Mount with `@renderAll`, 10 000 rows, 7 rounds, median: script 19 ms on `main`, 61 ms with `TrackedArray`, 60 ms with the built-in. All tasks 265 ms, 313 ms and 303 ms. Raw runs: [`results/scale-ember-6.12.0.json`](results/scale-ember-6.12.0.json). Run with `BENCH_SCALE=1`.
+
+For more realistic rows and the real v5, v6 and v7 builds, see [the version benchmark](../versions/README.md).
+
 ## What it does
 
 - **Scrolling:** 10 000 rows at a static height, 300 steps of 200 px, two frames per step. Each run is a new page. CPU time comes from Chrome's `Performance.getMetrics`. The order of the builds is shuffled in each round.

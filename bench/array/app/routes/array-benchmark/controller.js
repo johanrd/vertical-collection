@@ -22,9 +22,9 @@ const IMPLEMENTATIONS = {
   'plain array (not reactive)': [(rows) => rows, spliceStep],
 };
 
-function rowChangeMicroseconds(name, steps) {
+function rowChangeMicroseconds(name, steps, size = 20) {
   const [make, step] = IMPLEMENTATIONS[name];
-  const a = make(Array.from({ length: 20 }, (_, i) => ({ i })));
+  const a = make(Array.from({ length: size }, (_, i) => ({ i })));
   const start = performance.now();
   for (let s = 0; s < steps; s++) {
     step(a, { i: s });
@@ -73,5 +73,6 @@ window.__bench = {
 };
 
 export default class extends Controller {
+  renderAll = new URLSearchParams(location.search).get('renderAll') === 'true';
   shouldRecycle = new URLSearchParams(location.search).get('recycle') !== 'false';
 }
