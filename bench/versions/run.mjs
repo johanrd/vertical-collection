@@ -108,7 +108,7 @@ const PLAIN_BUILDS = [
   { name: '#573 before, TrackedArray', ref: '7377e7a' },
   { name: '#573, plain array', ref: '20ebe9b' },
 ];
-const KEYS = process.env.BENCH_KEYS;
+const KEYS = process.env.BENCH_KEYS || process.env.BENCH_DBMON;
 const KEYS_BUILDS = [
   { name: 'main', ref: '52bbd57' },
   { name: '#585', ref: 'bcb33ab' },
@@ -127,7 +127,7 @@ function build({ name, ref, patch, patchEmber }) {
   sh(`git worktree add -q --detach "${dir}" ${ref}`, repo);
   patch?.(dir);
   cpSync(join(here, 'app'), join(dir, 'test-app/app'), { recursive: true });
-  edit(join(dir, 'test-app/app/router.ts'), (t) => swap(t, "this.route('settings');", "this.route('settings');\n  this.route('version-benchmark');"));
+  edit(join(dir, 'test-app/app/router.ts'), (t) => swap(t, "this.route('settings');", "this.route('settings');\n  this.route('version-benchmark');\n  this.route('dbmon-benchmark');"));
   sh('pnpm install --no-frozen-lockfile', dir);
   sh(`pnpm add -D ember-source@${values.ember}`, join(dir, 'test-app'));
   if (patch) sh(`pnpm add -D ember-source@${values.ember}`, join(dir, 'vertical-collection'));
@@ -223,6 +223,11 @@ const KEY_SCENARIOS = [
   { name: 'Infinite scroll: append 20 rows at the end, 40 times', query: 'rows=2000&key=id', action: 'append' },
   { name: 'Prepend 20 rows, 40 times', query: 'rows=2000&key=id', action: 'prepend' },
   { name: 'Refetch: new objects plus 20 rows, 40 times', query: 'rows=2000&key=id', action: 'refetchAppend' },
+];
+
+const DBMON_SCENARIOS = [
+  { name: 'dbmon: new objects each frame, same length, 300 frames', action: 'dbmonSteady', route: 'dbmon-benchmark' },
+  { name: 'dbmon: new objects each frame, 2 more rows each frame, 300 frames', action: 'dbmonGrowing', route: 'dbmon-benchmark' },
 ];
 
 const shuffle = (list) => list.map((v) => [Math.random(), v]).sort((a, b) => a[0] - b[0]).map(([, v]) => v);
@@ -343,9 +348,9 @@ if (process.env.BENCH_MOUNT) {
 }
 const runs = [];
 for (let round = 0; round < Number(values.rounds); round++) {
-  for (const scenario of shuffle(KEYS ? KEY_SCENARIOS : SCENARIOS)) {
+  for (const scenario of shuffle(process.env.BENCH_DBMON ? DBMON_SCENARIOS : KEYS ? KEY_SCENARIOS : SCENARIOS)) {
     for (const b of shuffle(builds)) {
-      const page = await openPage(browser, `http://localhost:${b.port}/?${scenario.query}#/version-benchmark`);
+      const page = await openPage(browser, `http://localhost:${b.port}/?${scenario.query ?? ''}#/${scenario.route ?? 'version-benchmark'}`);
       const before = scenario.action ? await page.metrics() : { ScriptDuration: 0, TaskDuration: 0 };
       const result = scenario.action ? await page.evaluate(`window.__bench.${scenario.action}()`) : { longFrames: null };
       const after = await page.metrics();
@@ -368,6 +373,6 @@ for (const dir of trees) sh(`git worktree remove --force "${dir}"`, repo);
 const out = join(here, 'results');
 mkdirSync(out, { recursive: true });
 writeFileSync(
-  join(out, `${KEYS ? 'key-update-' : PLAIN ? 'plain-array-' : LEAN ? 'without-dependencies-' : ''}ember-${values.ember}.json`),
+  join(out, `${process.env.BENCH_DBMON ? 'dbmon-' : KEYS ? 'key-update-' : PLAIN ? 'plain-array-' : LEAN ? 'without-dependencies-' : ''}ember-${values.ember}.json`),
   JSON.stringify({ ember: values.ember, rounds: Number(values.rounds), v5: V5, v6: V6, chrome: execSync(`"${values.chrome}" --version`).toString().trim(), runs }, null, 2) + '\n',
 );

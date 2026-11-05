@@ -1,0 +1,17 @@
+<div class="table-wrapper" style="height: 600px; overflow: auto;">
+  <table class="table table-striped latest-data">
+    <tbody>
+      <VerticalCollection
+        @items={{this.databases}}
+        @containerSelector=".table-wrapper"
+        @key="id"
+        @estimateHeight={{37}}
+        @staticHeight={{true}}
+        @bufferSize={{5}}
+        as |db|
+      >
+        <DbmonRow @tagName="tr" @db={{db}} />
+      </VerticalCollection>
+    </tbody>
+  </table>
+</div>

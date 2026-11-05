@@ -103,6 +103,19 @@ The test suite passes, 243 of 243, on Ember 3.28, 6.12, 7.4 and 7.5 beta. The re
 - With the same objects, there is no clear cost.
 - A refetch costs about 0.4 ms more each time, because #585 renders the new objects. `main` does less work there because it leaves the rows stale.
 
+## dbmon with #585
+
+The real `DbmonRow` and `getData`, with new objects in each of 300 frames, like the dbmon demo. `main` at `52bbd57` against #585 at `bcb33ab`, on Ember 7.4, 20 rounds. Raw runs: [`results/dbmon-ember-7.4.0.json`](results/dbmon-ember-7.4.0.json).
+
+| 300 frames | Script: `main`, #585, difference | All tasks: `main`, #585, difference |
+|---|---|---|
+| Same length, as in the demo | 178, 183, -1 ms (-3 to +4) | 617, 635, +3 ms (-11 to +22) |
+| 2 more rows in each frame | 25, 186, **+160 ms (+151 to +176)** | 295, 684, **+373 ms (+364 to +384)** |
+
+- The dbmon demo keeps the same length, so it takes the reset path, and #585's new code does not run. There is no clear difference.
+- When the list grows in each frame, `main` is cheap because it leaves the rows on screen stale. With #585, it costs about the same as a same-length update.
+- No scenario had a median above 0 frames over 25 ms.
+
 ## Is this an upstream problem?
 
 Not one that shows in this use. `trackedArray` has a tag per index, but each reader also consumes the collection tag, and each write dirties it. The index tags look redundant, from reading the code.
