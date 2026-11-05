@@ -1,0 +1,3789 @@
+{
+  "ember": "7.4.0",
+  "rounds": 15,
+  "v5": "24ee6d8",
+  "v6": "c7ed3f7",
+  "chrome": "Google Chrome 156.0.8078.80",
+  "runs": [
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 203.447,
+      "taskMs": 545.967
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 209.619,
+      "taskMs": 561.021
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 269.161,
+      "taskMs": 716.0790000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 294.137,
+      "taskMs": 763.736
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.237,
+      "taskMs": 57.802
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.115,
+      "taskMs": 55.809
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.506,
+      "taskMs": 54.84
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.157,
+      "taskMs": 52.987
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 49.972,
+      "taskMs": 158.00300000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 52.611000000000004,
+      "taskMs": 152.97699999999998
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 58.42999999999999,
+      "taskMs": 168.94600000000003
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 54.376,
+      "taskMs": 169.21399999999997
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.441999999999997,
+      "taskMs": 495.34499999999997
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.562000000000005,
+      "taskMs": 523.849
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.997,
+      "taskMs": 515.514
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 72.35900000000001,
+      "taskMs": 544.729
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 20.987,
+      "taskMs": 83.73199999999999
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 24.235999999999997,
+      "taskMs": 92.89199999999998
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 22.354999999999997,
+      "taskMs": 91.66999999999999
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.672000000000004,
+      "taskMs": 82.57600000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 326.845,
+      "taskMs": 738.645
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 280.362,
+      "taskMs": 618.8209999999999
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 289.07500000000005,
+      "taskMs": 626.0600000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 402.208,
+      "taskMs": 853.652
+    },
+    {
+      "round": 0,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.495,
+      "taskMs": 76.25600000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.196,
+      "taskMs": 79.41999999999999
+    },
+    {
+      "round": 0,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.880999999999997,
+      "taskMs": 82
+    },
+    {
+      "round": 0,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.708,
+      "taskMs": 77.658
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.441,
+      "taskMs": 67.896
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.544,
+      "taskMs": 62.498
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.406000000000002,
+      "taskMs": 55.565000000000005
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.643,
+      "taskMs": 54.779
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 189.417,
+      "taskMs": 496.666
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 190.64199999999997,
+      "taskMs": 500.67799999999994
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 180.60099999999997,
+      "taskMs": 483.39700000000005
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 183.85199999999998,
+      "taskMs": 485.544
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.36,
+      "taskMs": 541.782
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 72,
+      "taskMs": 564.8879999999999
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.498,
+      "taskMs": 523.086
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.275,
+      "taskMs": 525.015
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 257.41400000000004,
+      "taskMs": 573.4410000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 244.23799999999997,
+      "taskMs": 559.686
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 264.75100000000003,
+      "taskMs": 591.1880000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 261.284,
+      "taskMs": 576.4010000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.70499999999999,
+      "taskMs": 135.332
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 41.97,
+      "taskMs": 130.97799999999998
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 41.716,
+      "taskMs": 129.83599999999998
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 42.073,
+      "taskMs": 131.04399999999998
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 16.641000000000002,
+      "taskMs": 64.15700000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.419999999999998,
+      "taskMs": 66.867
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.871999999999996,
+      "taskMs": 65.07000000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.950999999999997,
+      "taskMs": 65.649
+    },
+    {
+      "round": 1,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.759,
+      "taskMs": 74.30000000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.779,
+      "taskMs": 72.376
+    },
+    {
+      "round": 1,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.873999999999995,
+      "taskMs": 78.038
+    },
+    {
+      "round": 1,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.619999999999997,
+      "taskMs": 75.38600000000001
+    },
+    {
+      "round": 2,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.444,
+      "taskMs": 76.902
+    },
+    {
+      "round": 2,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.516999999999996,
+      "taskMs": 73.80700000000002
+    },
+    {
+      "round": 2,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.902,
+      "taskMs": 77.629
+    },
+    {
+      "round": 2,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.849999999999998,
+      "taskMs": 80.524
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 242.862,
+      "taskMs": 556.852
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 272.29400000000004,
+      "taskMs": 599.68
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 294.589,
+      "taskMs": 658.4939999999999
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 359.52900000000005,
+      "taskMs": 781.6270000000001
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.007,
+      "taskMs": 521.171
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 71.414,
+      "taskMs": 549.6370000000001
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.143,
+      "taskMs": 501.698
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.632,
+      "taskMs": 492.688
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 329.456,
+      "taskMs": 862.011
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 296.22900000000004,
+      "taskMs": 786.951
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 283.71000000000004,
+      "taskMs": 753.5000000000001
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 340.478,
+      "taskMs": 888.6659999999999
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.822,
+      "taskMs": 53.861
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21,
+      "taskMs": 54.614999999999995
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.304,
+      "taskMs": 54.438
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.656000000000002,
+      "taskMs": 54.870000000000005
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 57.989000000000004,
+      "taskMs": 188.257
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 54.803000000000004,
+      "taskMs": 174.206
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 55.259,
+      "taskMs": 169.3
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 51.73199999999999,
+      "taskMs": 158.56599999999997
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.630000000000003,
+      "taskMs": 92.10000000000001
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 29.28,
+      "taskMs": 92.03899999999999
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.588000000000005,
+      "taskMs": 100.522
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.346999999999998,
+      "taskMs": 82.90099999999998
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 34.626,
+      "taskMs": 548.369
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 35.194,
+      "taskMs": 512.255
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 72.02600000000001,
+      "taskMs": 551.7189999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 34.534,
+      "taskMs": 529.334
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 382.99799999999993,
+      "taskMs": 862.836
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 268.45599999999996,
+      "taskMs": 597.723
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 273.56800000000004,
+      "taskMs": 604.4780000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 365.69,
+      "taskMs": 778.629
+    },
+    {
+      "round": 3,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 30.825000000000003,
+      "taskMs": 95.13199999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.5,
+      "taskMs": 75.15399999999998
+    },
+    {
+      "round": 3,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 28.098,
+      "taskMs": 94.70700000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 34.624,
+      "taskMs": 112.149
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 301.889,
+      "taskMs": 811.529
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 317.46399999999994,
+      "taskMs": 803.086
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 301.408,
+      "taskMs": 794.4
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 306.198,
+      "taskMs": 792.37
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 47.831,
+      "taskMs": 148.105
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 51.327000000000005,
+      "taskMs": 145.474
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 42.24,
+      "taskMs": 132.345
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 54.09199999999999,
+      "taskMs": 158.618
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.326,
+      "taskMs": 58.766
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.622,
+      "taskMs": 56.943
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.09,
+      "taskMs": 54.141
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.44,
+      "taskMs": 55.32
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 20.163,
+      "taskMs": 89.08599999999998
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.810999999999996,
+      "taskMs": 107.10900000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.148999999999997,
+      "taskMs": 90.11099999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.945999999999998,
+      "taskMs": 69.84800000000001
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 254.174,
+      "taskMs": 584.109
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 270.2,
+      "taskMs": 599.823
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 407.02,
+      "taskMs": 874.001
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 357.266,
+      "taskMs": 783.423
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.024,
+      "taskMs": 56.351
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.663,
+      "taskMs": 53.141
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.028000000000002,
+      "taskMs": 52.631
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.357999999999997,
+      "taskMs": 54.087
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 53.276,
+      "taskMs": 169.06
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 45.916000000000004,
+      "taskMs": 142.111
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 47.551,
+      "taskMs": 151.692
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 53.212999999999994,
+      "taskMs": 170.27599999999998
+    },
+    {
+      "round": 4,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 30.417,
+      "taskMs": 104.763
+    },
+    {
+      "round": 4,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 29.18,
+      "taskMs": 98.63000000000001
+    },
+    {
+      "round": 4,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 30.617,
+      "taskMs": 103.015
+    },
+    {
+      "round": 4,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.377,
+      "taskMs": 83.42399999999999
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.243000000000002,
+      "taskMs": 96.398
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.794,
+      "taskMs": 72.65100000000001
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.863000000000003,
+      "taskMs": 101.581
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.464999999999996,
+      "taskMs": 92.381
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 273.26800000000003,
+      "taskMs": 729.079
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 304.70599999999996,
+      "taskMs": 801.627
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 249.749,
+      "taskMs": 653.937
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 189.084,
+      "taskMs": 500.78599999999994
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 67.878,
+      "taskMs": 533.8119999999999
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 30.587,
+      "taskMs": 488.984
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.762999999999998,
+      "taskMs": 498.039
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 30.861,
+      "taskMs": 506.282
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.127,
+      "taskMs": 499.378
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 83.027,
+      "taskMs": 540.0279999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.086999999999996,
+      "taskMs": 501.11899999999997
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 30.453,
+      "taskMs": 493.678
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 471.782,
+      "taskMs": 978.9669999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 269.87100000000004,
+      "taskMs": 594.98
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 272.687,
+      "taskMs": 595.917
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 277.145,
+      "taskMs": 601.2660000000001
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 181.764,
+      "taskMs": 485.974
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 182.35000000000002,
+      "taskMs": 487.54900000000004
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 193.022,
+      "taskMs": 505.3190000000001
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 200.903,
+      "taskMs": 517.259
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 48.917,
+      "taskMs": 146.13199999999998
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 45.634,
+      "taskMs": 139.017
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 45.517,
+      "taskMs": 137.51600000000002
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 46.466,
+      "taskMs": 142.30399999999997
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.267,
+      "taskMs": 70.62299999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.359,
+      "taskMs": 69.736
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 16.721000000000004,
+      "taskMs": 66.17999999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.823,
+      "taskMs": 65.79899999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.618999999999996,
+      "taskMs": 71.86399999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.987,
+      "taskMs": 80.40899999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.399,
+      "taskMs": 74.305
+    },
+    {
+      "round": 5,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.178000000000004,
+      "taskMs": 76.461
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.353,
+      "taskMs": 57.501999999999995
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.166,
+      "taskMs": 57.448
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 24.303,
+      "taskMs": 61.289
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.753,
+      "taskMs": 56.580999999999996
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 273.153,
+      "taskMs": 600.925
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 261.321,
+      "taskMs": 581.813
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 250.937,
+      "taskMs": 570.972
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 272.066,
+      "taskMs": 600.208
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.209,
+      "taskMs": 64.76899999999999
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.907000000000004,
+      "taskMs": 70.10000000000001
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.944999999999997,
+      "taskMs": 73.64699999999999
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.088,
+      "taskMs": 70.789
+    },
+    {
+      "round": 6,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.889,
+      "taskMs": 81.63599999999998
+    },
+    {
+      "round": 6,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.659,
+      "taskMs": 80.65499999999999
+    },
+    {
+      "round": 6,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.993000000000002,
+      "taskMs": 78.6
+    },
+    {
+      "round": 6,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.634999999999998,
+      "taskMs": 79.08500000000001
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 36.815,
+      "taskMs": 666.455
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 82.63900000000001,
+      "taskMs": 602.653
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.349999999999994,
+      "taskMs": 555.311
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 34.164,
+      "taskMs": 615.12
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.795,
+      "taskMs": 132.839
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.158,
+      "taskMs": 133.518
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 40.768,
+      "taskMs": 128.33
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 42.823,
+      "taskMs": 132.094
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.990000000000002,
+      "taskMs": 54.696000000000005
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.374000000000002,
+      "taskMs": 54.67700000000001
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.038,
+      "taskMs": 53.507
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.985999999999997,
+      "taskMs": 56.458
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 183.788,
+      "taskMs": 486.34700000000004
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 181.75,
+      "taskMs": 484.16400000000004
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 189.421,
+      "taskMs": 503.56999999999994
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 194.665,
+      "taskMs": 511.643
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 0.095,
+      "taskMs": 3.685
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 0.068,
+      "taskMs": 7.842
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 0.386,
+      "taskMs": 5.392
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 0.074,
+      "taskMs": 3.766
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 4,
+      "scriptMs": 349.62,
+      "taskMs": 791.978
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 303.26200000000006,
+      "taskMs": 670.9209999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 279.877,
+      "taskMs": 635.7470000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 300.68699999999995,
+      "taskMs": 667.899
+    },
+    {
+      "round": 7,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.724,
+      "taskMs": 79.28600000000002
+    },
+    {
+      "round": 7,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.834,
+      "taskMs": 83.06700000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.833000000000002,
+      "taskMs": 82.818
+    },
+    {
+      "round": 7,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.862000000000002,
+      "taskMs": 80.08900000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 16.736,
+      "taskMs": 33.912
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 35.272999999999996,
+      "taskMs": 571.9889999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 34.245,
+      "taskMs": 587.3580000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 14.527,
+      "taskMs": 30.621
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 47.469,
+      "taskMs": 144.263
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 48.265,
+      "taskMs": 144.19299999999998
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.903999999999996,
+      "taskMs": 138.971
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 47.89300000000001,
+      "taskMs": 145.255
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 197.964,
+      "taskMs": 510.675
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 193.909,
+      "taskMs": 511.972
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 193.957,
+      "taskMs": 511.127
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 199.56400000000002,
+      "taskMs": 531.6289999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.176000000000002,
+      "taskMs": 67.11299999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.567999999999998,
+      "taskMs": 65.731
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.097,
+      "taskMs": 65.36900000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.624,
+      "taskMs": 71.353
+    },
+    {
+      "round": 8,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.878999999999998,
+      "taskMs": 78.392
+    },
+    {
+      "round": 8,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.302,
+      "taskMs": 80.19000000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.758000000000003,
+      "taskMs": 79.125
+    },
+    {
+      "round": 8,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.791999999999998,
+      "taskMs": 81.83600000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.327,
+      "taskMs": 62.314
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.622,
+      "taskMs": 71.681
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.401000000000003,
+      "taskMs": 62.398
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 25.732000000000003,
+      "taskMs": 64.76899999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 1,
+      "scriptMs": 210.23799999999997,
+      "taskMs": 550.759
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 191.73999999999998,
+      "taskMs": 509.02400000000006
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 185.68,
+      "taskMs": 501.26800000000003
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 232.83800000000002,
+      "taskMs": 610.7669999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 46.806,
+      "taskMs": 143.11100000000002
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 49.109,
+      "taskMs": 149.333
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 48.649,
+      "taskMs": 147.43599999999998
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 46.53,
+      "taskMs": 144.032
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 39.377,
+      "taskMs": 550.935
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 15.009,
+      "taskMs": 33.980000000000004
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 15.983,
+      "taskMs": 33.414
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 15.796999999999999,
+      "taskMs": 33.463
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 286.884,
+      "taskMs": 634.621
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 293.894,
+      "taskMs": 643.194
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 280.802,
+      "taskMs": 623.2359999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 299.04999999999995,
+      "taskMs": 661.7389999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.931000000000004,
+      "taskMs": 70.72300000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.403,
+      "taskMs": 72.03899999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 22.192999999999998,
+      "taskMs": 85.197
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 20.313000000000002,
+      "taskMs": 82.61399999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.026,
+      "taskMs": 53.184000000000005
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.762,
+      "taskMs": 56.618
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.200999999999997,
+      "taskMs": 60.114000000000004
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.569,
+      "taskMs": 58.160000000000004
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 16.290999999999997,
+      "taskMs": 63.36
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.755000000000003,
+      "taskMs": 65.521
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.814,
+      "taskMs": 66.06500000000001
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.608,
+      "taskMs": 68.76200000000001
+    },
+    {
+      "round": 9,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.569999999999997,
+      "taskMs": 79.67299999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.576000000000004,
+      "taskMs": 79.404
+    },
+    {
+      "round": 9,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.456,
+      "taskMs": 78.43900000000001
+    },
+    {
+      "round": 9,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.270999999999997,
+      "taskMs": 79.29899999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 235.02500000000003,
+      "taskMs": 623.5269999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 266.356,
+      "taskMs": 707.015
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 281.12100000000004,
+      "taskMs": 721.3929999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 191.466,
+      "taskMs": 511.88999999999993
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.516000000000005,
+      "taskMs": 509.81600000000003
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.072,
+      "taskMs": 500.45099999999996
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 86.912,
+      "taskMs": 538.891
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 30.339000000000002,
+      "taskMs": 490.382
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 469.05,
+      "taskMs": 984.7099999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 441.959,
+      "taskMs": 955.1899999999998
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 425.51900000000006,
+      "taskMs": 878.061
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 567.639,
+      "taskMs": 1121.942
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 60.05300000000001,
+      "taskMs": 176.972
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 68.69,
+      "taskMs": 181.346
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 57.504,
+      "taskMs": 162.06699999999998
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 40.901999999999994,
+      "taskMs": 129.90200000000002
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 478.729,
+      "taskMs": 1026.1860000000001
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 493.254,
+      "taskMs": 1074.4980000000003
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 581.5429999999999,
+      "taskMs": 1164.973
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 504.04100000000005,
+      "taskMs": 1047.6230000000003
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.747,
+      "taskMs": 55.995999999999995
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.56,
+      "taskMs": 58.304
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.298000000000002,
+      "taskMs": 53.379999999999995
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.607999999999997,
+      "taskMs": 56.45
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.968,
+      "taskMs": 99.774
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.314,
+      "taskMs": 103.451
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.519000000000002,
+      "taskMs": 110.69000000000001
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 29.198999999999998,
+      "taskMs": 117.23999999999998
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 62.372,
+      "taskMs": 192.552
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 62.468999999999994,
+      "taskMs": 196.106
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 58.663,
+      "taskMs": 179.364
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 67.13900000000001,
+      "taskMs": 211.78199999999998
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 394.79900000000004,
+      "taskMs": 1015.323
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 405.54799999999994,
+      "taskMs": 1033.283
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 449.715,
+      "taskMs": 1087.718
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 390.91700000000003,
+      "taskMs": 985.308
+    },
+    {
+      "round": 10,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 42.61300000000001,
+      "taskMs": 123.99
+    },
+    {
+      "round": 10,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 33.502,
+      "taskMs": 109.771
+    },
+    {
+      "round": 10,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 42.412000000000006,
+      "taskMs": 128.24099999999999
+    },
+    {
+      "round": 10,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 38.66,
+      "taskMs": 114.825
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.415,
+      "taskMs": 530.5419999999999
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.821,
+      "taskMs": 519.541
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 70.92,
+      "taskMs": 552.6529999999999
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.354,
+      "taskMs": 515.885
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.066999999999997,
+      "taskMs": 107.908
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.722999999999995,
+      "taskMs": 71.72699999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 36.504999999999995,
+      "taskMs": 152.987
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 24.01,
+      "taskMs": 101.73200000000001
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 574.88,
+      "taskMs": 1138.7530000000002
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 565.9340000000001,
+      "taskMs": 1174.936
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 625.495,
+      "taskMs": 1247.633
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 631.8679999999999,
+      "taskMs": 1251.6459999999997
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 423.545,
+      "taskMs": 1032.593
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 406.043,
+      "taskMs": 998.772
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 302.431,
+      "taskMs": 785.129
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 391.24199999999996,
+      "taskMs": 987.465
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.224,
+      "taskMs": 522.034
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 34.175,
+      "taskMs": 516.222
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 71.323,
+      "taskMs": 544.413
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.59,
+      "taskMs": 497.87199999999996
+    },
+    {
+      "round": 11,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 36.377,
+      "taskMs": 120.537
+    },
+    {
+      "round": 11,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 41.426,
+      "taskMs": 132.472
+    },
+    {
+      "round": 11,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 40.132,
+      "taskMs": 128.323
+    },
+    {
+      "round": 11,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 41.412000000000006,
+      "taskMs": 121.734
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.706,
+      "taskMs": 54.112
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.835,
+      "taskMs": 54.089999999999996
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.363,
+      "taskMs": 56.195
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.147,
+      "taskMs": 55.64
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 63.431000000000004,
+      "taskMs": 204.26400000000004
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 56.827000000000005,
+      "taskMs": 181.886
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 55.191,
+      "taskMs": 173.231
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 61.214000000000006,
+      "taskMs": 187.38699999999997
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 28.162,
+      "taskMs": 113.19500000000002
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 31.38200000000001,
+      "taskMs": 119.593
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.78,
+      "taskMs": 103.29299999999999
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 40.048,
+      "taskMs": 152.058
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 310.101,
+      "taskMs": 791.5400000000001
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 345.38599999999997,
+      "taskMs": 848.862
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 334.493,
+      "taskMs": 840.172
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 363.17900000000003,
+      "taskMs": 905.413
+    },
+    {
+      "round": 12,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 51.328,
+      "taskMs": 138.719
+    },
+    {
+      "round": 12,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 40.769000000000005,
+      "taskMs": 115.77900000000002
+    },
+    {
+      "round": 12,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 44.953,
+      "taskMs": 125.99300000000002
+    },
+    {
+      "round": 12,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 49.108,
+      "taskMs": 146.216
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 70.594,
+      "taskMs": 194.465
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 65.81700000000001,
+      "taskMs": 186.84199999999998
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 71.82600000000001,
+      "taskMs": 196.36700000000002
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 70.063,
+      "taskMs": 190.26999999999998
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.717,
+      "taskMs": 55.021
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.063,
+      "taskMs": 56.234
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.081999999999997,
+      "taskMs": 57.487
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.697000000000003,
+      "taskMs": 56.663
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 575.3810000000001,
+      "taskMs": 1144.2060000000001
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 573.0450000000001,
+      "taskMs": 1129.47
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 582.8420000000001,
+      "taskMs": 1148.703
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 556.3399999999999,
+      "taskMs": 1135.8129999999999
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.857999999999997,
+      "taskMs": 505.76
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 72.82600000000001,
+      "taskMs": 552.477
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.043000000000003,
+      "taskMs": 515.649
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.004,
+      "taskMs": 511.33399999999995
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.909,
+      "taskMs": 59.635
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.392000000000003,
+      "taskMs": 59.271
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.753,
+      "taskMs": 55.217
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.057,
+      "taskMs": 59.686
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 633.479,
+      "taskMs": 1217.922
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 344.738,
+      "taskMs": 713.216
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 422.776,
+      "taskMs": 908.928
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 528.826,
+      "taskMs": 1072.916
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 69.81800000000001,
+      "taskMs": 188.116
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 64.046,
+      "taskMs": 174.55700000000002
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 67.28999999999999,
+      "taskMs": 188.52399999999997
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 91.92500000000001,
+      "taskMs": 225.96
+    },
+    {
+      "round": 13,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 39.011,
+      "taskMs": 119.989
+    },
+    {
+      "round": 13,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.378999999999998,
+      "taskMs": 81.14099999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 44.303000000000004,
+      "taskMs": 124.87
+    },
+    {
+      "round": 13,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 49.287,
+      "taskMs": 140.779
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 371.441,
+      "taskMs": 930.6840000000001
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 328.23999999999995,
+      "taskMs": 849.241
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 391.06800000000004,
+      "taskMs": 1009.906
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 376.968,
+      "taskMs": 971.438
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.70399999999999,
+      "taskMs": 519.1569999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.104,
+      "taskMs": 510.42600000000004
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.550000000000004,
+      "taskMs": 511.706
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 71.622,
+      "taskMs": 557.114
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.538999999999998,
+      "taskMs": 98.49199999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 30.235,
+      "taskMs": 119.99300000000001
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 33.711,
+      "taskMs": 126.46300000000002
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 35.017999999999994,
+      "taskMs": 150.337
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 417.345,
+      "taskMs": 1067.7540000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 327.572,
+      "taskMs": 856.291
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling on",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 242.55299999999997,
+      "taskMs": 640.916
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 262.255,
+      "taskMs": 684.531
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 347.208,
+      "taskMs": 740.492
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling off",
+      "build": "v7, Ember without index tags",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 437.285,
+      "taskMs": 926.5400000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 433.774,
+      "taskMs": 921.941
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 354.545,
+      "taskMs": 766.442
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.506,
+      "taskMs": 528.443
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 73.584,
+      "taskMs": 580.5559999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 46.834,
+      "taskMs": 550.211
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.919,
+      "taskMs": 510.749
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 51.492,
+      "taskMs": 150.459
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.900999999999996,
+      "taskMs": 137.467
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 46.114000000000004,
+      "taskMs": 139.565
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 45.449000000000005,
+      "taskMs": 149.214
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.087000000000003,
+      "taskMs": 54.087
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.527,
+      "taskMs": 56.963
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.019000000000002,
+      "taskMs": 60.123999999999995
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.984,
+      "taskMs": 57.906
+    },
+    {
+      "round": 14,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 31.096,
+      "taskMs": 104.25600000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.351,
+      "taskMs": 81.74399999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.881999999999998,
+      "taskMs": 78.96300000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7, Ember without index tags",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 27.777,
+      "taskMs": 92.726
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.741,
+      "taskMs": 78.52000000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.674999999999997,
+      "taskMs": 67.38399999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.253999999999998,
+      "taskMs": 78.72099999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7, Ember without index tags",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.783,
+      "taskMs": 73.769
+    }
+  ]
+}

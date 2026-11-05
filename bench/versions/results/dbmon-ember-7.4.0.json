@@ -1,0 +1,729 @@
+{
+  "ember": "7.4.0",
+  "rounds": 20,
+  "v5": "24ee6d8",
+  "v6": "c7ed3f7",
+  "chrome": "Google Chrome 156.0.8078.80",
+  "runs": [
+    {
+      "round": 0,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 183.23,
+      "taskMs": 622.1179999999999
+    },
+    {
+      "round": 0,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 187.92000000000002,
+      "taskMs": 647.294
+    },
+    {
+      "round": 0,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 184.44,
+      "taskMs": 682.538
+    },
+    {
+      "round": 0,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 29.437000000000005,
+      "taskMs": 353.21799999999996
+    },
+    {
+      "round": 1,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 248.22799999999998,
+      "taskMs": 827.507
+    },
+    {
+      "round": 1,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 238.47299999999998,
+      "taskMs": 815.782
+    },
+    {
+      "round": 1,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 37.399,
+      "taskMs": 463.26500000000004
+    },
+    {
+      "round": 1,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 206.077,
+      "taskMs": 764.557
+    },
+    {
+      "round": 2,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 201.111,
+      "taskMs": 741.861
+    },
+    {
+      "round": 2,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 29.218,
+      "taskMs": 327.08799999999997
+    },
+    {
+      "round": 2,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 190.00699999999998,
+      "taskMs": 664.69
+    },
+    {
+      "round": 2,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 181.74300000000002,
+      "taskMs": 627.96
+    },
+    {
+      "round": 3,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 182.077,
+      "taskMs": 673.9979999999999
+    },
+    {
+      "round": 3,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 25.295,
+      "taskMs": 299.685
+    },
+    {
+      "round": 3,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 179.757,
+      "taskMs": 630.86
+    },
+    {
+      "round": 3,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 208.244,
+      "taskMs": 722.658
+    },
+    {
+      "round": 4,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 211.79999999999998,
+      "taskMs": 715.987
+    },
+    {
+      "round": 4,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 237.143,
+      "taskMs": 807.1270000000001
+    },
+    {
+      "round": 4,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 232.3,
+      "taskMs": 849.642
+    },
+    {
+      "round": 4,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 37.999,
+      "taskMs": 457.445
+    },
+    {
+      "round": 5,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 233.94899999999998,
+      "taskMs": 857.271
+    },
+    {
+      "round": 5,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 1,
+      "scriptMs": 40.558,
+      "taskMs": 442.144
+    },
+    {
+      "round": 5,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 215.584,
+      "taskMs": 718.943
+    },
+    {
+      "round": 5,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 176.112,
+      "taskMs": 611.982
+    },
+    {
+      "round": 6,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 24.809000000000005,
+      "taskMs": 290.35999999999996
+    },
+    {
+      "round": 6,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 178.20000000000002,
+      "taskMs": 665.249
+    },
+    {
+      "round": 6,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 172.217,
+      "taskMs": 597.231
+    },
+    {
+      "round": 6,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 173.839,
+      "taskMs": 606.838
+    },
+    {
+      "round": 7,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 169.962,
+      "taskMs": 585.217
+    },
+    {
+      "round": 7,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 172.021,
+      "taskMs": 595.2610000000001
+    },
+    {
+      "round": 7,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 173.32899999999998,
+      "taskMs": 637.253
+    },
+    {
+      "round": 7,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 23.249,
+      "taskMs": 273.90999999999997
+    },
+    {
+      "round": 8,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 23.194000000000003,
+      "taskMs": 277.936
+    },
+    {
+      "round": 8,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 166.45000000000002,
+      "taskMs": 616.46
+    },
+    {
+      "round": 8,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 184.424,
+      "taskMs": 621.705
+    },
+    {
+      "round": 8,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 241.52400000000003,
+      "taskMs": 808.79
+    },
+    {
+      "round": 9,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 241.072,
+      "taskMs": 813.5590000000001
+    },
+    {
+      "round": 9,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 228.60400000000004,
+      "taskMs": 785.9419999999999
+    },
+    {
+      "round": 9,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 202.26,
+      "taskMs": 728.293
+    },
+    {
+      "round": 9,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 22.918,
+      "taskMs": 270.34999999999997
+    },
+    {
+      "round": 10,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 172.36,
+      "taskMs": 605.6360000000001
+    },
+    {
+      "round": 10,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 169.64000000000001,
+      "taskMs": 583.899
+    },
+    {
+      "round": 10,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 24.162,
+      "taskMs": 281.822
+    },
+    {
+      "round": 10,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 174.992,
+      "taskMs": 656.8889999999999
+    },
+    {
+      "round": 11,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 170.06,
+      "taskMs": 597.191
+    },
+    {
+      "round": 11,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 166.988,
+      "taskMs": 582.8409999999999
+    },
+    {
+      "round": 11,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 24.380999999999997,
+      "taskMs": 282.18899999999996
+    },
+    {
+      "round": 11,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 170.22299999999998,
+      "taskMs": 643.648
+    },
+    {
+      "round": 12,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 169.67600000000002,
+      "taskMs": 599.9870000000001
+    },
+    {
+      "round": 12,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 165.072,
+      "taskMs": 577.704
+    },
+    {
+      "round": 12,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 174.15200000000002,
+      "taskMs": 650.026
+    },
+    {
+      "round": 12,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 23.055999999999997,
+      "taskMs": 276.59499999999997
+    },
+    {
+      "round": 13,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 173.40800000000002,
+      "taskMs": 599.8370000000001
+    },
+    {
+      "round": 13,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 164.24800000000002,
+      "taskMs": 565.1350000000001
+    },
+    {
+      "round": 13,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 24.050999999999995,
+      "taskMs": 288.105
+    },
+    {
+      "round": 13,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 186.585,
+      "taskMs": 685.0240000000001
+    },
+    {
+      "round": 14,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 183.774,
+      "taskMs": 642.964
+    },
+    {
+      "round": 14,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 181.88899999999998,
+      "taskMs": 636.794
+    },
+    {
+      "round": 14,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 204.124,
+      "taskMs": 744.147
+    },
+    {
+      "round": 14,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 34.92099999999999,
+      "taskMs": 449.706
+    },
+    {
+      "round": 15,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 34.812999999999995,
+      "taskMs": 439.08000000000004
+    },
+    {
+      "round": 15,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 237.508,
+      "taskMs": 870.125
+    },
+    {
+      "round": 15,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 219.516,
+      "taskMs": 749.4879999999999
+    },
+    {
+      "round": 15,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 233.511,
+      "taskMs": 778.1510000000001
+    },
+    {
+      "round": 16,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 214.28,
+      "taskMs": 733.7819999999999
+    },
+    {
+      "round": 16,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 217.395,
+      "taskMs": 737.801
+    },
+    {
+      "round": 16,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 225.328,
+      "taskMs": 809.609
+    },
+    {
+      "round": 16,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 37.809000000000005,
+      "taskMs": 442.74500000000006
+    },
+    {
+      "round": 17,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 33.717,
+      "taskMs": 418.86500000000007
+    },
+    {
+      "round": 17,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 217.03499999999997,
+      "taskMs": 783.38
+    },
+    {
+      "round": 17,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 171.2,
+      "taskMs": 597.9689999999999
+    },
+    {
+      "round": 17,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 170.487,
+      "taskMs": 599.57
+    },
+    {
+      "round": 18,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 175.976,
+      "taskMs": 650.967
+    },
+    {
+      "round": 18,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 24.095,
+      "taskMs": 279.497
+    },
+    {
+      "round": 18,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 167.512,
+      "taskMs": 574.0889999999999
+    },
+    {
+      "round": 18,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 168.839,
+      "taskMs": 580.02
+    },
+    {
+      "round": 19,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 176.853,
+      "taskMs": 597.5640000000001
+    },
+    {
+      "round": 19,
+      "scenario": "dbmon: new objects each frame, same length, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 176.508,
+      "taskMs": 610.707
+    },
+    {
+      "round": 19,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "#585",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 173.823,
+      "taskMs": 650.778
+    },
+    {
+      "round": 19,
+      "scenario": "dbmon: new objects each frame, 2 more rows each frame, 300 frames",
+      "build": "main",
+      "rows": 0,
+      "longFrames": 0,
+      "scriptMs": 23.392,
+      "taskMs": 278.813
+    }
+  ]
+}

@@ -1,0 +1,1022 @@
+{
+  "ember": "7.4.0",
+  "cause": [
+    {
+      "round": 0,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 967.7377909999923,
+      "scriptMs": 49.812000000000005,
+      "taskMs": 559.074
+    },
+    {
+      "round": 0,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 927.4837079999998,
+      "scriptMs": 82.759,
+      "taskMs": 558.822
+    },
+    {
+      "round": 0,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 881.2117499999877,
+      "scriptMs": 45.462,
+      "taskMs": 535.4989999999999
+    },
+    {
+      "round": 0,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 863.6857500000042,
+      "scriptMs": 46.592,
+      "taskMs": 523.506
+    },
+    {
+      "round": 0,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 897.942166000008,
+      "scriptMs": 85.623,
+      "taskMs": 559.1850000000001
+    },
+    {
+      "round": 1,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 910.4872080000059,
+      "scriptMs": 82.638,
+      "taskMs": 546.533
+    },
+    {
+      "round": 1,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 893.9037910000043,
+      "scriptMs": 76.63499999999999,
+      "taskMs": 552.375
+    },
+    {
+      "round": 1,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 877.6348329999892,
+      "scriptMs": 45.56,
+      "taskMs": 505.582
+    },
+    {
+      "round": 1,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 879.068207999997,
+      "scriptMs": 45.211,
+      "taskMs": 509.14099999999996
+    },
+    {
+      "round": 1,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 892.8134169999976,
+      "scriptMs": 46.217,
+      "taskMs": 517.366
+    },
+    {
+      "round": 2,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 879.6837500000111,
+      "scriptMs": 44.783,
+      "taskMs": 504.71500000000003
+    },
+    {
+      "round": 2,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 912.359958999994,
+      "scriptMs": 83.842,
+      "taskMs": 543.7180000000001
+    },
+    {
+      "round": 2,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 902.1558330000116,
+      "scriptMs": 84.17,
+      "taskMs": 542.042
+    },
+    {
+      "round": 2,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 888.6196670000063,
+      "scriptMs": 41.63,
+      "taskMs": 521.1519999999999
+    },
+    {
+      "round": 2,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 864.6744999999937,
+      "scriptMs": 44.297000000000004,
+      "taskMs": 509.00800000000004
+    },
+    {
+      "round": 3,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 880.8465409999917,
+      "scriptMs": 45.847,
+      "taskMs": 526.1759999999999
+    },
+    {
+      "round": 3,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 913.0299169999926,
+      "scriptMs": 78.812,
+      "taskMs": 562.0840000000001
+    },
+    {
+      "round": 3,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 913.2549999999901,
+      "scriptMs": 41.527,
+      "taskMs": 555.098
+    },
+    {
+      "round": 3,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 931.3284999999887,
+      "scriptMs": 87.725,
+      "taskMs": 562.268
+    },
+    {
+      "round": 3,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 896.6534169999941,
+      "scriptMs": 44.902,
+      "taskMs": 538.9549999999999
+    },
+    {
+      "round": 4,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 882.335791999998,
+      "scriptMs": 46.449,
+      "taskMs": 536.136
+    },
+    {
+      "round": 4,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 912.7628330000007,
+      "scriptMs": 86.848,
+      "taskMs": 560.975
+    },
+    {
+      "round": 4,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 946.726582999996,
+      "scriptMs": 87.029,
+      "taskMs": 594.6669999999999
+    },
+    {
+      "round": 4,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 894.7478750000009,
+      "scriptMs": 41.154,
+      "taskMs": 531.454
+    },
+    {
+      "round": 4,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 862.5201659999875,
+      "scriptMs": 44.616,
+      "taskMs": 514.152
+    },
+    {
+      "round": 5,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 862.2174579999992,
+      "scriptMs": 45.941,
+      "taskMs": 506.022
+    },
+    {
+      "round": 5,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 914.1271249999991,
+      "scriptMs": 82.188,
+      "taskMs": 554.813
+    },
+    {
+      "round": 5,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 847.7137090000033,
+      "scriptMs": 45.47,
+      "taskMs": 504.00999999999993
+    },
+    {
+      "round": 5,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 916.8564999999944,
+      "scriptMs": 78.691,
+      "taskMs": 557.316
+    },
+    {
+      "round": 5,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 875.3567089999997,
+      "scriptMs": 44.977999999999994,
+      "taskMs": 501.477
+    },
+    {
+      "round": 6,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 922.6419160000078,
+      "scriptMs": 82.903,
+      "taskMs": 541.862
+    },
+    {
+      "round": 6,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 912.3752500000119,
+      "scriptMs": 86.476,
+      "taskMs": 555.222
+    },
+    {
+      "round": 6,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 880.1523339999985,
+      "scriptMs": 45.74,
+      "taskMs": 510.462
+    },
+    {
+      "round": 6,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 889.7073749999981,
+      "scriptMs": 40.041,
+      "taskMs": 522.0550000000001
+    },
+    {
+      "round": 6,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 877.4405839999963,
+      "scriptMs": 46.125,
+      "taskMs": 508.24100000000004
+    },
+    {
+      "round": 7,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 909.5267500000045,
+      "scriptMs": 82.137,
+      "taskMs": 534.98
+    },
+    {
+      "round": 7,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 878.3395830000081,
+      "scriptMs": 45.238,
+      "taskMs": 529.477
+    },
+    {
+      "round": 7,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 919.3123749999941,
+      "scriptMs": 79.461,
+      "taskMs": 559.162
+    },
+    {
+      "round": 7,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 872.1195000000007,
+      "scriptMs": 44.992,
+      "taskMs": 499.14300000000003
+    },
+    {
+      "round": 7,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 881.2047500000044,
+      "scriptMs": 45.845,
+      "taskMs": 522.7199999999999
+    },
+    {
+      "round": 8,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 894.8350839999912,
+      "scriptMs": 39.760999999999996,
+      "taskMs": 511.181
+    },
+    {
+      "round": 8,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 922.2317079999775,
+      "scriptMs": 83.006,
+      "taskMs": 552.44
+    },
+    {
+      "round": 8,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 910.8920409999846,
+      "scriptMs": 41.299,
+      "taskMs": 536.959
+    },
+    {
+      "round": 8,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 943.1906660000095,
+      "scriptMs": 79.761,
+      "taskMs": 573.8389999999999
+    },
+    {
+      "round": 8,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 865.8957919999957,
+      "scriptMs": 39.529,
+      "taskMs": 515.467
+    },
+    {
+      "round": 9,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 890.5039579999866,
+      "scriptMs": 39.21,
+      "taskMs": 509.95599999999996
+    },
+    {
+      "round": 9,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 863.8830000000016,
+      "scriptMs": 44.949000000000005,
+      "taskMs": 505.985
+    },
+    {
+      "round": 9,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 888.8947909999988,
+      "scriptMs": 43.503,
+      "taskMs": 500.21700000000004
+    },
+    {
+      "round": 9,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 921.6910829999833,
+      "scriptMs": 85.632,
+      "taskMs": 566.893
+    },
+    {
+      "round": 9,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 924.2803750000021,
+      "scriptMs": 82.315,
+      "taskMs": 547.1179999999999
+    },
+    {
+      "round": 10,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 940.00091599999,
+      "scriptMs": 88.828,
+      "taskMs": 569.4590000000001
+    },
+    {
+      "round": 10,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 882.4381250000151,
+      "scriptMs": 45.19,
+      "taskMs": 527.421
+    },
+    {
+      "round": 10,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 876.4094580000092,
+      "scriptMs": 46.766000000000005,
+      "taskMs": 525.316
+    },
+    {
+      "round": 10,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 865.5163340000145,
+      "scriptMs": 46.79,
+      "taskMs": 513.772
+    },
+    {
+      "round": 10,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 938.7200420000008,
+      "scriptMs": 79.718,
+      "taskMs": 565.543
+    },
+    {
+      "round": 11,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 914.3001250000088,
+      "scriptMs": 84.215,
+      "taskMs": 561.943
+    },
+    {
+      "round": 11,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 878.1632080000127,
+      "scriptMs": 46.431,
+      "taskMs": 518.125
+    },
+    {
+      "round": 11,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 882.971916999988,
+      "scriptMs": 41.376000000000005,
+      "taskMs": 522.731
+    },
+    {
+      "round": 11,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 890.6313749999972,
+      "scriptMs": 45.830000000000005,
+      "taskMs": 521.439
+    },
+    {
+      "round": 11,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 915.3210410000174,
+      "scriptMs": 78.542,
+      "taskMs": 556.176
+    },
+    {
+      "round": 12,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 880.0733749999781,
+      "scriptMs": 46.971,
+      "taskMs": 509.76
+    },
+    {
+      "round": 12,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 908.0571250000212,
+      "scriptMs": 84.35900000000001,
+      "taskMs": 547.3059999999999
+    },
+    {
+      "round": 12,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 907.1348749999888,
+      "scriptMs": 81.881,
+      "taskMs": 544.577
+    },
+    {
+      "round": 12,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 864.2069170000032,
+      "scriptMs": 43.507,
+      "taskMs": 509.138
+    },
+    {
+      "round": 12,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 913.3027500000026,
+      "scriptMs": 45.208999999999996,
+      "taskMs": 518.611
+    },
+    {
+      "round": 13,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 905.0114579999936,
+      "scriptMs": 46.898,
+      "taskMs": 537.3050000000001
+    },
+    {
+      "round": 13,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 913.4763749999984,
+      "scriptMs": 82.963,
+      "taskMs": 553.13
+    },
+    {
+      "round": 13,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 851.5110419999983,
+      "scriptMs": 44.367999999999995,
+      "taskMs": 506.563
+    },
+    {
+      "round": 13,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 875.8762080000015,
+      "scriptMs": 45.997,
+      "taskMs": 510.889
+    },
+    {
+      "round": 13,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 914.2783749999944,
+      "scriptMs": 80.327,
+      "taskMs": 564.129
+    },
+    {
+      "round": 14,
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "wallMs": 930.2143330000108,
+      "scriptMs": 90.297,
+      "taskMs": 569.065
+    },
+    {
+      "round": 14,
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "wallMs": 880.8927089999779,
+      "scriptMs": 45.542,
+      "taskMs": 529.385
+    },
+    {
+      "round": 14,
+      "build": "v5 (main)",
+      "rows": 5000,
+      "wallMs": 879.9204580000078,
+      "scriptMs": 40.856,
+      "taskMs": 535.004
+    },
+    {
+      "round": 14,
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "wallMs": 915.0562079999945,
+      "scriptMs": 80.295,
+      "taskMs": 565.153
+    },
+    {
+      "round": 14,
+      "build": "v7",
+      "rows": 5000,
+      "wallMs": 880.7963749999763,
+      "scriptMs": 47.830999999999996,
+      "taskMs": 520.892
+    }
+  ],
+  "profiles": {
+    "v5 (main)": {
+      "jsMs": [
+        423.06,
+        421.023,
+        421.009,
+        420.781,
+        422.792
+      ],
+      "top": [
+        [
+          "_updateConstants main-DsPaM6Nd.js:72790",
+          137.9546
+        ],
+        [
+          "(garbage collector) :-1",
+          33.6156
+        ],
+        [
+          "evaluate main-DsPaM6Nd.js:27182",
+          15.0862
+        ],
+        [
+          "getBoundingClientRect main-DsPaM6Nd.js:72223",
+          13.6832
+        ],
+        [
+          "createTextNode :-1",
+          11.3366
+        ],
+        [
+          "insertBefore :-1",
+          10.6278
+        ],
+        [
+          "getbyaddr main-DsPaM6Nd.js:28908",
+          9.924199999999999
+        ],
+        [
+          "get isMachine main-DsPaM6Nd.js:28832",
+          8.7574
+        ],
+        [
+          "nextStatement main-DsPaM6Nd.js:30931",
+          8.602400000000001
+        ],
+        [
+          "add main-DsPaM6Nd.js:1263",
+          8.192
+        ],
+        [
+          "get size main-DsPaM6Nd.js:28828",
+          7.108
+        ],
+        [
+          "get type main-DsPaM6Nd.js:28836",
+          4.7554
+        ],
+        [
+          "insertBefore main-DsPaM6Nd.js:29858",
+          4.7501999999999995
+        ],
+        [
+          "createElement :-1",
+          4.7142
+        ],
+        [
+          "createTextNode main-DsPaM6Nd.js:29889",
+          4.2132
+        ],
+        [
+          "valueForRef main-DsPaM6Nd.js:1577",
+          4.1686
+        ],
+        [
+          "createElement main-DsPaM6Nd.js:29830",
+          4.1674
+        ],
+        [
+          "childRefFor main-DsPaM6Nd.js:1610",
+          2.8839999999999995
+        ]
+      ]
+    },
+    "v6 (#574)": {
+      "jsMs": [
+        456.712,
+        462.279,
+        451.916,
+        466.627,
+        474.581
+      ],
+      "top": [
+        [
+          "_updateConstants main-DhPQ_Ofl.js:73992",
+          135.84459999999999
+        ],
+        [
+          "(garbage collector) :-1",
+          34.465199999999996
+        ],
+        [
+          "add main-DhPQ_Ofl.js:1263",
+          15.6012
+        ],
+        [
+          "evaluate main-DhPQ_Ofl.js:27080",
+          15.087599999999998
+        ],
+        [
+          "getBoundingClientRect main-DhPQ_Ofl.js:73399",
+          14.877
+        ],
+        [
+          "insertBefore :-1",
+          11.832600000000001
+        ],
+        [
+          "getbyaddr main-DhPQ_Ofl.js:28806",
+          11.084400000000002
+        ],
+        [
+          "createTextNode :-1",
+          9.8116
+        ],
+        [
+          "valueForRef main-DhPQ_Ofl.js:1577",
+          8.703999999999999
+        ],
+        [
+          "nextStatement main-DhPQ_Ofl.js:30829",
+          8.0076
+        ],
+        [
+          "get isMachine main-DhPQ_Ofl.js:28730",
+          7.728199999999999
+        ],
+        [
+          "(anonymous) main-DhPQ_Ofl.js:1121",
+          7.227000000000001
+        ],
+        [
+          "get size main-DhPQ_Ofl.js:28726",
+          6.276400000000001
+        ],
+        [
+          "createElement :-1",
+          4.998600000000001
+        ],
+        [
+          "createTextNode main-DhPQ_Ofl.js:29787",
+          4.6088
+        ],
+        [
+          "createElement main-DhPQ_Ofl.js:29728",
+          4.365399999999999
+        ],
+        [
+          "get type main-DhPQ_Ofl.js:28734",
+          4.2867999999999995
+        ],
+        [
+          "getManager main-DhPQ_Ofl.js:18594",
+          4.2326
+        ]
+      ]
+    },
+    "v6 + built-in array": {
+      "jsMs": [
+        458.906,
+        436.694,
+        439.736,
+        449.974,
+        456.096
+      ],
+      "top": [
+        [
+          "_updateConstants main-BJY6nW38.js:73722",
+          131.5762
+        ],
+        [
+          "(garbage collector) :-1",
+          32.537800000000004
+        ],
+        [
+          "add main-BJY6nW38.js:1263",
+          14.6214
+        ],
+        [
+          "getBoundingClientRect main-BJY6nW38.js:73129",
+          14.5808
+        ],
+        [
+          "evaluate main-BJY6nW38.js:27080",
+          13.786599999999998
+        ],
+        [
+          "insertBefore :-1",
+          12.8226
+        ],
+        [
+          "getbyaddr main-BJY6nW38.js:28806",
+          10.464000000000002
+        ],
+        [
+          "createTextNode :-1",
+          9.268799999999999
+        ],
+        [
+          "valueForRef main-BJY6nW38.js:1577",
+          7.911200000000003
+        ],
+        [
+          "get isMachine main-BJY6nW38.js:28730",
+          7.7318
+        ],
+        [
+          "nextStatement main-BJY6nW38.js:30829",
+          7.3092
+        ],
+        [
+          "(anonymous) main-BJY6nW38.js:1121",
+          7.0396
+        ],
+        [
+          "get size main-BJY6nW38.js:28726",
+          6.5518
+        ],
+        [
+          "createElement :-1",
+          5.7478
+        ],
+        [
+          "get type main-BJY6nW38.js:28734",
+          4.928400000000001
+        ],
+        [
+          "createElement main-BJY6nW38.js:29728",
+          4.5176
+        ],
+        [
+          "insertBefore main-BJY6nW38.js:29756",
+          4.1268
+        ],
+        [
+          "getManager main-BJY6nW38.js:18594",
+          3.8480000000000003
+        ]
+      ]
+    },
+    "v6 + tracked()": {
+      "jsMs": [
+        418.593,
+        406.171,
+        403.614,
+        400.85,
+        401.541
+      ],
+      "top": [
+        [
+          "_updateConstants main-KnD1v4pU.js:73998",
+          127.5222
+        ],
+        [
+          "(garbage collector) :-1",
+          32.9282
+        ],
+        [
+          "evaluate main-KnD1v4pU.js:27080",
+          15.080599999999999
+        ],
+        [
+          "getBoundingClientRect main-KnD1v4pU.js:73405",
+          13.3686
+        ],
+        [
+          "insertBefore :-1",
+          12.450199999999999
+        ],
+        [
+          "getbyaddr main-KnD1v4pU.js:28806",
+          11.0258
+        ],
+        [
+          "createTextNode :-1",
+          10.039200000000001
+        ],
+        [
+          "get isMachine main-KnD1v4pU.js:28730",
+          8.0108
+        ],
+        [
+          "add main-KnD1v4pU.js:1263",
+          6.6822
+        ],
+        [
+          "nextStatement main-KnD1v4pU.js:30829",
+          6.4674
+        ],
+        [
+          "get size main-KnD1v4pU.js:28726",
+          5.965200000000001
+        ],
+        [
+          "createElement :-1",
+          5.4626
+        ],
+        [
+          "valueForRef main-KnD1v4pU.js:1577",
+          4.9984
+        ],
+        [
+          "createElement main-KnD1v4pU.js:29728",
+          4.3534
+        ],
+        [
+          "get type main-KnD1v4pU.js:28734",
+          4.2172
+        ],
+        [
+          "createTextNode main-KnD1v4pU.js:29787",
+          4.1259999999999994
+        ],
+        [
+          "insertBefore main-KnD1v4pU.js:29756",
+          3.8659999999999997
+        ],
+        [
+          "get main-KnD1v4pU.js:29861",
+          3.1162
+        ]
+      ]
+    },
+    "v7": {
+      "jsMs": [
+        406.415,
+        408.651,
+        447.096,
+        414.195,
+        400.65
+      ],
+      "top": [
+        [
+          "_updateConstants main-CgTHbn-k.js:73663",
+          132.19299999999998
+        ],
+        [
+          "(garbage collector) :-1",
+          34.311
+        ],
+        [
+          "evaluate main-CgTHbn-k.js:27080",
+          16.6466
+        ],
+        [
+          "getBoundingClientRect main-CgTHbn-k.js:73070",
+          14.191999999999998
+        ],
+        [
+          "insertBefore :-1",
+          10.916
+        ],
+        [
+          "createTextNode :-1",
+          10.227
+        ],
+        [
+          "getbyaddr main-CgTHbn-k.js:28806",
+          9.5502
+        ],
+        [
+          "add main-CgTHbn-k.js:1263",
+          8.837
+        ],
+        [
+          "get isMachine main-CgTHbn-k.js:28730",
+          8.6212
+        ],
+        [
+          "nextStatement main-CgTHbn-k.js:30829",
+          7.081
+        ],
+        [
+          "valueForRef main-CgTHbn-k.js:1577",
+          5.6236000000000015
+        ],
+        [
+          "get size main-CgTHbn-k.js:28726",
+          5.454199999999999
+        ],
+        [
+          "createElement :-1",
+          5.1432
+        ],
+        [
+          "get type main-CgTHbn-k.js:28734",
+          5.0962000000000005
+        ],
+        [
+          "createElement main-CgTHbn-k.js:29728",
+          4.7818
+        ],
+        [
+          "childRefFor main-CgTHbn-k.js:1610",
+          3.696
+        ],
+        [
+          "createTextNode main-CgTHbn-k.js:29787",
+          3.658
+        ],
+        [
+          "insertBefore main-CgTHbn-k.js:29756",
+          3.6128
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,3789 @@
+{
+  "ember": "7.4.0",
+  "rounds": 15,
+  "v5": "24ee6d8",
+  "v6": "c7ed3f7",
+  "chrome": "Google Chrome 156.0.8078.80",
+  "runs": [
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.105,
+      "taskMs": 81.157
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.005,
+      "taskMs": 77.735
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.092000000000002,
+      "taskMs": 71.17
+    },
+    {
+      "round": 0,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.112,
+      "taskMs": 69.08699999999997
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 51.97299999999999,
+      "taskMs": 175.51699999999997
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.946,
+      "taskMs": 137.241
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.499,
+      "taskMs": 132.388
+    },
+    {
+      "round": 0,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 46.888,
+      "taskMs": 148.445
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 383.25000000000006,
+      "taskMs": 828.825
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 527.4839999999999,
+      "taskMs": 1064.2730000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 529.047,
+      "taskMs": 1121.084
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 470.648,
+      "taskMs": 997.167
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.001,
+      "taskMs": 62.942
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.407,
+      "taskMs": 60.726
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.31,
+      "taskMs": 60.138
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.578,
+      "taskMs": 62.307
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 216.135,
+      "taskMs": 570.829
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 266.10799999999995,
+      "taskMs": 690.986
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 297.395,
+      "taskMs": 806.02
+    },
+    {
+      "round": 0,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 257.683,
+      "taskMs": 678.2349999999999
+    },
+    {
+      "round": 0,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.977999999999998,
+      "taskMs": 77.012
+    },
+    {
+      "round": 0,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 27.605,
+      "taskMs": 85.16300000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 25.425000000000004,
+      "taskMs": 82.22600000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.349000000000004,
+      "taskMs": 74.19400000000002
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 75.05799999999999,
+      "taskMs": 603.505
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 34.099,
+      "taskMs": 537.525
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 67.339,
+      "taskMs": 531.8810000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.865,
+      "taskMs": 513.236
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 365.65000000000003,
+      "taskMs": 778.119
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 313.162,
+      "taskMs": 698.409
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 494.716,
+      "taskMs": 1059.2630000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 584.745,
+      "taskMs": 1202.606
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 395.304,
+      "taskMs": 981.0779999999999
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 337.96700000000004,
+      "taskMs": 864.629
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 304.692,
+      "taskMs": 790.021
+    },
+    {
+      "round": 1,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 305.371,
+      "taskMs": 788.073
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 50.461999999999996,
+      "taskMs": 154.151
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 56.63,
+      "taskMs": 160.202
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 42.431999999999995,
+      "taskMs": 137.98499999999999
+    },
+    {
+      "round": 1,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 54.97299999999999,
+      "taskMs": 155.019
+    },
+    {
+      "round": 1,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.445,
+      "taskMs": 77.81400000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 29.272999999999996,
+      "taskMs": 88.86200000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 27.976,
+      "taskMs": 90.546
+    },
+    {
+      "round": 1,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 27.619000000000003,
+      "taskMs": 93.401
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 25.826999999999998,
+      "taskMs": 73.171
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.997,
+      "taskMs": 69.917
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.172,
+      "taskMs": 65.984
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.314999999999998,
+      "taskMs": 68.28399999999999
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.709999999999997,
+      "taskMs": 70.946
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.355,
+      "taskMs": 71.809
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.357999999999997,
+      "taskMs": 66.75899999999999
+    },
+    {
+      "round": 1,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.366999999999997,
+      "taskMs": 111.315
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.448999999999998,
+      "taskMs": 511.323
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 70.877,
+      "taskMs": 553.097
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 71.79599999999999,
+      "taskMs": 556.172
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.099000000000004,
+      "taskMs": 502.75800000000004
+    },
+    {
+      "round": 2,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 39.945,
+      "taskMs": 132.441
+    },
+    {
+      "round": 2,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 34.956,
+      "taskMs": 118.62699999999998
+    },
+    {
+      "round": 2,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 31.64,
+      "taskMs": 113.373
+    },
+    {
+      "round": 2,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 40.589,
+      "taskMs": 128.11999999999998
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 62.175,
+      "taskMs": 195.81300000000002
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 57.836,
+      "taskMs": 177.958
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 71.047,
+      "taskMs": 207.44600000000003
+    },
+    {
+      "round": 2,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 64.857,
+      "taskMs": 206.659
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 30.497999999999998,
+      "taskMs": 131.958
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 33.271,
+      "taskMs": 134.14700000000002
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 36.708999999999996,
+      "taskMs": 148.044
+    },
+    {
+      "round": 2,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 28.567,
+      "taskMs": 108.91499999999999
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 416.94899999999996,
+      "taskMs": 1042.155
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 424.64000000000004,
+      "taskMs": 1081.883
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 390.44399999999996,
+      "taskMs": 1007.236
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 368.908,
+      "taskMs": 943.773
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.688,
+      "taskMs": 521.331
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 67.98899999999999,
+      "taskMs": 536.15
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 34.318,
+      "taskMs": 508.003
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 72.74,
+      "taskMs": 542.723
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 460.102,
+      "taskMs": 953.841
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 420.476,
+      "taskMs": 871.337
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 304.81800000000004,
+      "taskMs": 683.5070000000001
+    },
+    {
+      "round": 2,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 548.559,
+      "taskMs": 1087.6570000000002
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.672,
+      "taskMs": 63.08800000000001
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.191000000000003,
+      "taskMs": 61.976000000000006
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.088,
+      "taskMs": 62.795
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.787,
+      "taskMs": 61.025999999999996
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.694,
+      "taskMs": 538.1179999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.524000000000004,
+      "taskMs": 510.88800000000003
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 73.167,
+      "taskMs": 566.806
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 78.759,
+      "taskMs": 567.8539999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 334.663,
+      "taskMs": 866.425
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 324.21700000000004,
+      "taskMs": 840.957
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 363.808,
+      "taskMs": 941.1800000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 323.64300000000003,
+      "taskMs": 834.0840000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 30.419999999999998,
+      "taskMs": 120.12500000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 24.799000000000003,
+      "taskMs": 98.92500000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.686000000000003,
+      "taskMs": 85.237
+    },
+    {
+      "round": 3,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 20.751,
+      "taskMs": 89.32299999999998
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 60.139,
+      "taskMs": 187.36399999999998
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 64.138,
+      "taskMs": 186.226
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 54.31300000000001,
+      "taskMs": 172.068
+    },
+    {
+      "round": 3,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 55.635000000000005,
+      "taskMs": 181.40599999999998
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 428.692,
+      "taskMs": 926.5120000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 344.532,
+      "taskMs": 738.2950000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 373.5,
+      "taskMs": 796.3009999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 3,
+      "scriptMs": 421.632,
+      "taskMs": 830.3539999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.080000000000002,
+      "taskMs": 61.938
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.438,
+      "taskMs": 63.57599999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.810000000000002,
+      "taskMs": 63.07699999999999
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.663,
+      "taskMs": 63.885999999999996
+    },
+    {
+      "round": 3,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 31.221,
+      "taskMs": 95.57
+    },
+    {
+      "round": 3,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 27.688000000000002,
+      "taskMs": 89.04699999999998
+    },
+    {
+      "round": 3,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 31.341999999999995,
+      "taskMs": 99.162
+    },
+    {
+      "round": 3,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 32.75,
+      "taskMs": 104.104
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.317000000000004,
+      "taskMs": 103.464
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.058,
+      "taskMs": 78.42699999999999
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.349999999999998,
+      "taskMs": 103.643
+    },
+    {
+      "round": 4,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 21.698,
+      "taskMs": 82.65400000000001
+    },
+    {
+      "round": 4,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 31.277,
+      "taskMs": 98.50799999999998
+    },
+    {
+      "round": 4,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 29.944,
+      "taskMs": 95.70200000000001
+    },
+    {
+      "round": 4,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 31.094,
+      "taskMs": 99.111
+    },
+    {
+      "round": 4,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.835,
+      "taskMs": 77.736
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.916999999999998,
+      "taskMs": 59.358000000000004
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.034,
+      "taskMs": 59.312999999999995
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.689,
+      "taskMs": 58.794
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.781000000000002,
+      "taskMs": 59.278
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 5,
+      "scriptMs": 258.699,
+      "taskMs": 590.967
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 310.55899999999997,
+      "taskMs": 693.9119999999999
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 353.39500000000004,
+      "taskMs": 760.039
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 270.912,
+      "taskMs": 611.645
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 73.218,
+      "taskMs": 570.592
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 47.627,
+      "taskMs": 537.8100000000001
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 75.173,
+      "taskMs": 566.4639999999999
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.379,
+      "taskMs": 514.162
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 173.964,
+      "taskMs": 460.89000000000004
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 5,
+      "scriptMs": 178.808,
+      "taskMs": 465.88699999999994
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 164.21999999999997,
+      "taskMs": 441.0060000000001
+    },
+    {
+      "round": 4,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 164.00699999999998,
+      "taskMs": 435.783
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.446,
+      "taskMs": 136.619
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 40.946,
+      "taskMs": 128.13800000000003
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 41.397000000000006,
+      "taskMs": 128.346
+    },
+    {
+      "round": 4,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 40.71,
+      "taskMs": 127.891
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.157,
+      "taskMs": 525.676
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 77.566,
+      "taskMs": 569.264
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 74.586,
+      "taskMs": 556.48
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.001999999999995,
+      "taskMs": 523.676
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 193.297,
+      "taskMs": 528.929
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 269.66200000000003,
+      "taskMs": 695.3580000000001
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 273.51000000000005,
+      "taskMs": 711.0600000000001
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 306.81800000000004,
+      "taskMs": 786.6460000000001
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 49.24399999999999,
+      "taskMs": 156.15900000000002
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 48.387,
+      "taskMs": 150.694
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 47.597,
+      "taskMs": 146.739
+    },
+    {
+      "round": 5,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 47.85,
+      "taskMs": 144.344
+    },
+    {
+      "round": 5,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 27.154999999999998,
+      "taskMs": 86.289
+    },
+    {
+      "round": 5,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 29.308999999999997,
+      "taskMs": 88.701
+    },
+    {
+      "round": 5,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 29.697,
+      "taskMs": 94.87
+    },
+    {
+      "round": 5,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 30.261,
+      "taskMs": 95.39299999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 422.742,
+      "taskMs": 892.675
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 469.705,
+      "taskMs": 951.9830000000001
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 388.019,
+      "taskMs": 809.384
+    },
+    {
+      "round": 5,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 223.728,
+      "taskMs": 506.2979999999999
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.099,
+      "taskMs": 58.585
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.086000000000002,
+      "taskMs": 58.693000000000005
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.125,
+      "taskMs": 58.967999999999996
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.384,
+      "taskMs": 60.054
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 15.551999999999996,
+      "taskMs": 60.673
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 15.582000000000003,
+      "taskMs": 57.337
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 16.705000000000002,
+      "taskMs": 62.016
+    },
+    {
+      "round": 5,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 16.409000000000002,
+      "taskMs": 62.278999999999996
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 16.159,
+      "taskMs": 60.58599999999999
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 15.476,
+      "taskMs": 58.503
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 14.987000000000004,
+      "taskMs": 58.824000000000005
+    },
+    {
+      "round": 6,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 15.475000000000003,
+      "taskMs": 56.967000000000006
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 266.184,
+      "taskMs": 604.2650000000001
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 419.40299999999996,
+      "taskMs": 871.054
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 481.54100000000005,
+      "taskMs": 975.306
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 451.245,
+      "taskMs": 934.13
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.676,
+      "taskMs": 60.151999999999994
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.482999999999997,
+      "taskMs": 62.515
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.109,
+      "taskMs": 62.647999999999996
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.702,
+      "taskMs": 58.256
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 57.652,
+      "taskMs": 164.40099999999998
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 48.93399999999999,
+      "taskMs": 148.503
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 53.111999999999995,
+      "taskMs": 159.582
+    },
+    {
+      "round": 6,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.99400000000001,
+      "taskMs": 142.287
+    },
+    {
+      "round": 6,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.93,
+      "taskMs": 75.802
+    },
+    {
+      "round": 6,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 21.9,
+      "taskMs": 72.213
+    },
+    {
+      "round": 6,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 21.641000000000002,
+      "taskMs": 72.75500000000001
+    },
+    {
+      "round": 6,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.903000000000002,
+      "taskMs": 75.908
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 250.231,
+      "taskMs": 664.51
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 185.59499999999997,
+      "taskMs": 491.608
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 179.35199999999998,
+      "taskMs": 479.942
+    },
+    {
+      "round": 6,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 181.532,
+      "taskMs": 483.429
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 74.795,
+      "taskMs": 578.0920000000001
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.519,
+      "taskMs": 534.302
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.962999999999997,
+      "taskMs": 531.726
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 78.86999999999999,
+      "taskMs": 585.662
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 412.58099999999996,
+      "taskMs": 878.4309999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 458.289,
+      "taskMs": 950.2420000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 249.256,
+      "taskMs": 568.064
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 414.433,
+      "taskMs": 846.9209999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.525000000000002,
+      "taskMs": 73.668
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.248,
+      "taskMs": 93.70099999999998
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 20.587,
+      "taskMs": 79.86699999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.822000000000003,
+      "taskMs": 91.48
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 303.481,
+      "taskMs": 781.944
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 313.855,
+      "taskMs": 811.1709999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 311.53200000000004,
+      "taskMs": 806.779
+    },
+    {
+      "round": 7,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 280.551,
+      "taskMs": 759.685
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.602999999999994,
+      "taskMs": 137.53799999999998
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 46.88300000000001,
+      "taskMs": 143.02499999999998
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 45.422000000000004,
+      "taskMs": 156.207
+    },
+    {
+      "round": 7,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.849,
+      "taskMs": 139.006
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.047,
+      "taskMs": 534.239
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 72.114,
+      "taskMs": 559.1500000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 78.788,
+      "taskMs": 567.0880000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.718999999999998,
+      "taskMs": 536.246
+    },
+    {
+      "round": 7,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.785,
+      "taskMs": 74.64100000000002
+    },
+    {
+      "round": 7,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 21.874000000000002,
+      "taskMs": 72.46600000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.297,
+      "taskMs": 73.28300000000002
+    },
+    {
+      "round": 7,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.301,
+      "taskMs": 73.33300000000001
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.126,
+      "taskMs": 65.93499999999999
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.422,
+      "taskMs": 63.045
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.766000000000002,
+      "taskMs": 63.082
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.451999999999998,
+      "taskMs": 64.13000000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.429,
+      "taskMs": 82.99699999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 24.354000000000003,
+      "taskMs": 78.574
+    },
+    {
+      "round": 8,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.382999999999996,
+      "taskMs": 71.21900000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.425,
+      "taskMs": 73.94899999999998
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 180.62,
+      "taskMs": 481.6099999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 180.999,
+      "taskMs": 481.15
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 182.46,
+      "taskMs": 485.9749999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 177.14,
+      "taskMs": 479.95
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 41.963,
+      "taskMs": 133.135
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.242000000000004,
+      "taskMs": 135.326
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 45.029999999999994,
+      "taskMs": 139.356
+    },
+    {
+      "round": 8,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.30199999999999,
+      "taskMs": 136.293
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.597000000000005,
+      "taskMs": 74.101
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.566,
+      "taskMs": 63.675
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.493000000000006,
+      "taskMs": 68.35
+    },
+    {
+      "round": 8,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.513999999999996,
+      "taskMs": 69.03800000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 74.924,
+      "taskMs": 585.4939999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 34.302,
+      "taskMs": 548.389
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 70.435,
+      "taskMs": 546.923
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.527,
+      "taskMs": 505.779
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.899,
+      "taskMs": 59.106
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.921,
+      "taskMs": 60.851
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.718,
+      "taskMs": 59.601
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.186,
+      "taskMs": 62.04
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 456.712,
+      "taskMs": 921.2589999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 401.73199999999997,
+      "taskMs": 853.975
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 367.36199999999997,
+      "taskMs": 762.3910000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 247.506,
+      "taskMs": 565.622
+    },
+    {
+      "round": 9,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 21.848999999999997,
+      "taskMs": 73.42600000000002
+    },
+    {
+      "round": 9,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.654,
+      "taskMs": 72.301
+    },
+    {
+      "round": 9,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.324,
+      "taskMs": 77.638
+    },
+    {
+      "round": 9,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 22.3,
+      "taskMs": 72.97
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.104,
+      "taskMs": 63.18600000000001
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.585,
+      "taskMs": 61.245
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.744,
+      "taskMs": 61.398
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.398999999999997,
+      "taskMs": 62.75899999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 245.85700000000003,
+      "taskMs": 662.0060000000001
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 265.952,
+      "taskMs": 718.512
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 182.32299999999998,
+      "taskMs": 485.181
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 182.149,
+      "taskMs": 484.18899999999996
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.74299999999999,
+      "taskMs": 138.034
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.513999999999996,
+      "taskMs": 143.36599999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.63600000000001,
+      "taskMs": 131.549
+    },
+    {
+      "round": 9,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 49.404,
+      "taskMs": 152.26899999999998
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 405.91299999999995,
+      "taskMs": 862.5090000000001
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 261.21099999999996,
+      "taskMs": 587.763
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 243.97000000000003,
+      "taskMs": 561.7489999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 245.54,
+      "taskMs": 562.84
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 73.866,
+      "taskMs": 581.499
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 75.02799999999999,
+      "taskMs": 594.7139999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 38.188,
+      "taskMs": 549.205
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.188,
+      "taskMs": 562.5329999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.696000000000005,
+      "taskMs": 64.67399999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.990999999999996,
+      "taskMs": 65.95899999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 16.839999999999996,
+      "taskMs": 65.6
+    },
+    {
+      "round": 9,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.28,
+      "taskMs": 62.184000000000005
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.58,
+      "taskMs": 62.955999999999996
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.43,
+      "taskMs": 67.475
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.786,
+      "taskMs": 65.63
+    },
+    {
+      "round": 10,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 17.797,
+      "taskMs": 66.087
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.260999999999996,
+      "taskMs": 135.253
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.184,
+      "taskMs": 138.183
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 45.375,
+      "taskMs": 141.559
+    },
+    {
+      "round": 10,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.327,
+      "taskMs": 134.682
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 250.637,
+      "taskMs": 574.467
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 263.593,
+      "taskMs": 587.7199999999999
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 258.332,
+      "taskMs": 579.449
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 250.255,
+      "taskMs": 581.2299999999999
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.413,
+      "taskMs": 65.526
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.497,
+      "taskMs": 64.845
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.573,
+      "taskMs": 63.332
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.209,
+      "taskMs": 65.413
+    },
+    {
+      "round": 10,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.906999999999996,
+      "taskMs": 79.77300000000001
+    },
+    {
+      "round": 10,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.499,
+      "taskMs": 76.70500000000001
+    },
+    {
+      "round": 10,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 27.307,
+      "taskMs": 83.67699999999999
+    },
+    {
+      "round": 10,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.613000000000003,
+      "taskMs": 75.179
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 224.273,
+      "taskMs": 612.9010000000001
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 178.49699999999999,
+      "taskMs": 477.685
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 171.19,
+      "taskMs": 460.188
+    },
+    {
+      "round": 10,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 314.153,
+      "taskMs": 844.33
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 68.983,
+      "taskMs": 544.783
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.397000000000002,
+      "taskMs": 500.16799999999995
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 69.20400000000001,
+      "taskMs": 539.5210000000001
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 30.137,
+      "taskMs": 494.859
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 356.153,
+      "taskMs": 941.0280000000001
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 389.207,
+      "taskMs": 1028.1180000000002
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 397.55600000000004,
+      "taskMs": 1038.553
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 365.922,
+      "taskMs": 967.4350000000001
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 55.533,
+      "taskMs": 169.27900000000002
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 61.928999999999995,
+      "taskMs": 195.356
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 50.759,
+      "taskMs": 160.438
+    },
+    {
+      "round": 11,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 46.78699999999999,
+      "taskMs": 150.36599999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.232999999999997,
+      "taskMs": 59.665000000000006
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.049,
+      "taskMs": 59.351
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.834,
+      "taskMs": 58.429
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.097,
+      "taskMs": 59.189
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.493,
+      "taskMs": 104.92999999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.809,
+      "taskMs": 96.48599999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.804000000000002,
+      "taskMs": 73.66799999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 22.115000000000002,
+      "taskMs": 86.376
+    },
+    {
+      "round": 11,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 29.762999999999998,
+      "taskMs": 100.71399999999998
+    },
+    {
+      "round": 11,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 36.826,
+      "taskMs": 126.79000000000002
+    },
+    {
+      "round": 11,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 28.415000000000003,
+      "taskMs": 89.66399999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 35.416000000000004,
+      "taskMs": 119.172
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 30.962,
+      "taskMs": 510.34599999999995
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 30.816,
+      "taskMs": 501.158
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 68.619,
+      "taskMs": 539.551
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 70.571,
+      "taskMs": 540.7950000000001
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 454.932,
+      "taskMs": 995.9209999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 448.656,
+      "taskMs": 981.7959999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 490.26899999999995,
+      "taskMs": 1087.211
+    },
+    {
+      "round": 11,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 466.865,
+      "taskMs": 1047.976
+    },
+    {
+      "round": 12,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 30.497999999999998,
+      "taskMs": 104.44300000000001
+    },
+    {
+      "round": 12,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 45.623,
+      "taskMs": 153.137
+    },
+    {
+      "round": 12,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 36.238,
+      "taskMs": 117.21799999999999
+    },
+    {
+      "round": 12,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 37.856,
+      "taskMs": 128.16100000000003
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 25.92,
+      "taskMs": 104.61499999999998
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 31.452999999999996,
+      "taskMs": 130.024
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 23.386,
+      "taskMs": 102.012
+    },
+    {
+      "round": 12,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.224,
+      "taskMs": 102.155
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.462999999999997,
+      "taskMs": 549.767
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 67.49,
+      "taskMs": 542.969
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 70.93199999999999,
+      "taskMs": 541.796
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.073,
+      "taskMs": 502.951
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 319.446,
+      "taskMs": 848.807
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 175.57600000000002,
+      "taskMs": 475.16300000000007
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 253.76999999999998,
+      "taskMs": 677.8140000000001
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 329.781,
+      "taskMs": 873.446
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 48.36300000000001,
+      "taskMs": 149.581
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.07999999999999,
+      "taskMs": 134.633
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 54.483000000000004,
+      "taskMs": 178.638
+    },
+    {
+      "round": 12,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 60.627,
+      "taskMs": 194.313
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 490.261,
+      "taskMs": 1070.069
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 341.51599999999996,
+      "taskMs": 737.325
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 292.18,
+      "taskMs": 668.882
+    },
+    {
+      "round": 12,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 254.828,
+      "taskMs": 579.1999999999999
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 23.595000000000002,
+      "taskMs": 64.856
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.662,
+      "taskMs": 60.602000000000004
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 24.232,
+      "taskMs": 67.618
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.788999999999998,
+      "taskMs": 62.59199999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.221,
+      "taskMs": 136.299
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.032,
+      "taskMs": 137.378
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 41.146,
+      "taskMs": 129.747
+    },
+    {
+      "round": 13,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 44.006,
+      "taskMs": 135.953
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 22.684,
+      "taskMs": 83.76499999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 28.102999999999998,
+      "taskMs": 119.075
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 27.967999999999996,
+      "taskMs": 106.983
+    },
+    {
+      "round": 13,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 26.531999999999996,
+      "taskMs": 102.076
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 267.73400000000004,
+      "taskMs": 594.161
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 455.61199999999997,
+      "taskMs": 1024.209
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 253.563,
+      "taskMs": 564.313
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 281.02299999999997,
+      "taskMs": 650.6370000000001
+    },
+    {
+      "round": 13,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 41.549,
+      "taskMs": 134.936
+    },
+    {
+      "round": 13,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 32.855,
+      "taskMs": 108.021
+    },
+    {
+      "round": 13,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 41.51499999999999,
+      "taskMs": 136.433
+    },
+    {
+      "round": 13,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 28.511000000000003,
+      "taskMs": 93.354
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.954,
+      "taskMs": 59.177
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.804,
+      "taskMs": 57.803
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.266000000000002,
+      "taskMs": 59.26
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.032,
+      "taskMs": 58.439
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 188.193,
+      "taskMs": 506.88999999999993
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 187.048,
+      "taskMs": 502.39900000000006
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 205.506,
+      "taskMs": 546.7289999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 189.07999999999998,
+      "taskMs": 506.84499999999997
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 70.40299999999999,
+      "taskMs": 537.0319999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 32.507,
+      "taskMs": 510.34900000000005
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 33.713,
+      "taskMs": 511.26400000000007
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 76.741,
+      "taskMs": 560.502
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling on",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 212.35899999999998,
+      "taskMs": 565.647
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling on",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 185.954,
+      "taskMs": 501.7830000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling on",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 198.668,
+      "taskMs": 525.047
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling on",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 213.09699999999998,
+      "taskMs": 563.072
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.442999999999998,
+      "taskMs": 74.4
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 18.644000000000002,
+      "taskMs": 69.803
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.688000000000002,
+      "taskMs": 74.90599999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Prepend 20 rows, 40 times",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": 0,
+      "scriptMs": 19.812,
+      "taskMs": 75.597
+    },
+    {
+      "round": 14,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v7",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.961999999999996,
+      "taskMs": 78.765
+    },
+    {
+      "round": 14,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v5 (main)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.119999999999997,
+      "taskMs": 76.211
+    },
+    {
+      "round": 14,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6 (#574)",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.232,
+      "taskMs": 76.569
+    },
+    {
+      "round": 14,
+      "scenario": "Filter and sort, 30 times",
+      "build": "v6, without dependencies",
+      "rows": 10,
+      "longFrames": 0,
+      "scriptMs": 23.290000000000003,
+      "taskMs": 75.50599999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 31.251,
+      "taskMs": 511.554
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 30.5,
+      "taskMs": 497.7
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 72.029,
+      "taskMs": 540.235
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "longFrames": null,
+      "scriptMs": 73.893,
+      "taskMs": 553.377
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.726,
+      "taskMs": 63.13100000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 22.118,
+      "taskMs": 61.311
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6, without dependencies",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 20.320999999999998,
+      "taskMs": 58.482
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "longFrames": null,
+      "scriptMs": 21.301000000000002,
+      "taskMs": 59.073
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v5 (main)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 42.873,
+      "taskMs": 137
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6 (#574)",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 41.308,
+      "taskMs": 130.959
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v7",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 42.52,
+      "taskMs": 131.635
+    },
+    {
+      "round": 14,
+      "scenario": "Infinite scroll: append 20 rows at the end, 40 times",
+      "build": "v6, without dependencies",
+      "rows": 20,
+      "longFrames": 0,
+      "scriptMs": 43.809,
+      "taskMs": 134.426
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling off",
+      "build": "v7",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 272.106,
+      "taskMs": 614.252
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling off",
+      "build": "v6 (#574)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 267.17800000000005,
+      "taskMs": 593.7180000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling off",
+      "build": "v6, without dependencies",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 250.45499999999998,
+      "taskMs": 572.24
+    },
+    {
+      "round": 14,
+      "scenario": "Scroll, recycling off",
+      "build": "v5 (main)",
+      "rows": 16,
+      "longFrames": 0,
+      "scriptMs": 242.613,
+      "taskMs": 556.226
+    }
+  ]
+}

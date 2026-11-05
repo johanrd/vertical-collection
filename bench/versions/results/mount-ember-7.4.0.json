@@ -1,0 +1,1206 @@
+{
+  "ember": "7.4.0",
+  "chrome": "Google Chrome 156.0.8078.80",
+  "runs": [
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 22.428,
+      "taskMs": 65.057
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 21.038,
+      "taskMs": 60.303000000000004
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 22.381999999999998,
+      "taskMs": 69.674
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 25.567,
+      "taskMs": 78.83900000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 22.067,
+      "taskMs": 61.981
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 32.833,
+      "taskMs": 558.608
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 75.344,
+      "taskMs": 579.4580000000001
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 70.5,
+      "taskMs": 568.7379999999999
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 32.935,
+      "taskMs": 529.648
+    },
+    {
+      "round": 0,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 39.33,
+      "taskMs": 634.104
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 23.669,
+      "taskMs": 68.313
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 22.075999999999997,
+      "taskMs": 62.832
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 27.076,
+      "taskMs": 71.404
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 25.677,
+      "taskMs": 72.994
+    },
+    {
+      "round": 1,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 27.684,
+      "taskMs": 73.85300000000001
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 33.77,
+      "taskMs": 563.585
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 78.32600000000001,
+      "taskMs": 579.898
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 81.232,
+      "taskMs": 582.744
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 32.612,
+      "taskMs": 536.51
+    },
+    {
+      "round": 1,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 38.089999999999996,
+      "taskMs": 631.9939999999999
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 26.079,
+      "taskMs": 79.546
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 23.077,
+      "taskMs": 65.667
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 23.386,
+      "taskMs": 64.431
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 21.614,
+      "taskMs": 64.771
+    },
+    {
+      "round": 2,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 23.747,
+      "taskMs": 64.405
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 73.423,
+      "taskMs": 588.149
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 34.181000000000004,
+      "taskMs": 594.476
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 34.8,
+      "taskMs": 556.731
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 33.955,
+      "taskMs": 552.372
+    },
+    {
+      "round": 2,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 81.665,
+      "taskMs": 587.519
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 32.58,
+      "taskMs": 548.534
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 92.509,
+      "taskMs": 586.9440000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 74.642,
+      "taskMs": 586.893
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 31.992,
+      "taskMs": 524.107
+    },
+    {
+      "round": 3,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 35.522,
+      "taskMs": 522.2
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 22.359,
+      "taskMs": 63.37800000000001
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 22.901,
+      "taskMs": 62.714000000000006
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 21.453,
+      "taskMs": 61.752
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 21.729,
+      "taskMs": 61.619
+    },
+    {
+      "round": 3,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 23.011,
+      "taskMs": 63.101000000000006
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 31.654,
+      "taskMs": 545.91
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 33.832,
+      "taskMs": 545.025
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 92.366,
+      "taskMs": 577.074
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 32.304,
+      "taskMs": 547.282
+    },
+    {
+      "round": 4,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 81.00200000000001,
+      "taskMs": 579.527
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 22.553,
+      "taskMs": 63.317
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 21.871000000000002,
+      "taskMs": 63.249
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 21.552000000000003,
+      "taskMs": 61.453
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 20.578,
+      "taskMs": 59.533
+    },
+    {
+      "round": 4,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 21.067,
+      "taskMs": 59.776999999999994
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 31.241999999999997,
+      "taskMs": 526.3090000000001
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 32.334,
+      "taskMs": 534.9540000000001
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 77.95,
+      "taskMs": 576.152
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 31.611,
+      "taskMs": 522.91
+    },
+    {
+      "round": 5,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 74.91499999999999,
+      "taskMs": 557.411
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 23.182000000000002,
+      "taskMs": 66.189
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 21.831,
+      "taskMs": 60.963
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 21.828,
+      "taskMs": 58.961
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 22.689999999999998,
+      "taskMs": 64.366
+    },
+    {
+      "round": 5,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 21.733999999999998,
+      "taskMs": 59.805
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 22.613,
+      "taskMs": 62.400999999999996
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 22.689,
+      "taskMs": 62.580999999999996
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 23.369,
+      "taskMs": 65.523
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 22.155,
+      "taskMs": 59.742000000000004
+    },
+    {
+      "round": 6,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 21.637,
+      "taskMs": 61.582
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 35.522,
+      "taskMs": 541.443
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 32.952000000000005,
+      "taskMs": 526.866
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 77.847,
+      "taskMs": 569.125
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 69.68,
+      "taskMs": 543.267
+    },
+    {
+      "round": 6,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 32.364,
+      "taskMs": 524.788
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 22.363,
+      "taskMs": 61.858000000000004
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 21.095,
+      "taskMs": 59.816
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 21.176000000000002,
+      "taskMs": 60.729
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 20.868000000000002,
+      "taskMs": 58.24
+    },
+    {
+      "round": 7,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 22.479,
+      "taskMs": 60.023
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 32.735,
+      "taskMs": 541.551
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 70.77,
+      "taskMs": 586.456
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 34.089,
+      "taskMs": 556.151
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 33.823,
+      "taskMs": 520.519
+    },
+    {
+      "round": 7,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 80.103,
+      "taskMs": 573.207
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 33.870999999999995,
+      "taskMs": 519.436
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 32.163,
+      "taskMs": 526.6370000000001
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 34.096000000000004,
+      "taskMs": 517.663
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 80.09700000000001,
+      "taskMs": 573.774
+    },
+    {
+      "round": 8,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 75.867,
+      "taskMs": 601.252
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 21.912999999999997,
+      "taskMs": 62.74399999999999
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 22.611,
+      "taskMs": 62.076
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 22.200999999999997,
+      "taskMs": 61.123999999999995
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 22.538,
+      "taskMs": 63.69
+    },
+    {
+      "round": 8,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 22.221999999999998,
+      "taskMs": 63.9
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 32.495999999999995,
+      "taskMs": 546.299
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 35.524,
+      "taskMs": 561.431
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 81.281,
+      "taskMs": 611.589
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 34.007999999999996,
+      "taskMs": 560.716
+    },
+    {
+      "round": 9,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 80.229,
+      "taskMs": 621.949
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 22.512,
+      "taskMs": 64.152
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 22.156,
+      "taskMs": 62.97899999999999
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 22.406,
+      "taskMs": 61.525000000000006
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 21.422,
+      "taskMs": 60.631
+    },
+    {
+      "round": 9,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 21.275,
+      "taskMs": 62.222
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 22.526,
+      "taskMs": 63.542
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 21.456,
+      "taskMs": 59.811
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 21.97,
+      "taskMs": 60.653
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 23.608,
+      "taskMs": 63.96300000000001
+    },
+    {
+      "round": 10,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 22.637,
+      "taskMs": 62.620999999999995
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 32.592000000000006,
+      "taskMs": 537.567
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 71.994,
+      "taskMs": 553.5250000000001
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 36.849,
+      "taskMs": 718.78
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 34.795,
+      "taskMs": 583.5409999999999
+    },
+    {
+      "round": 10,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 101.385,
+      "taskMs": 631.015
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 23.178,
+      "taskMs": 66.883
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 23.555,
+      "taskMs": 66.89
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 28.218,
+      "taskMs": 79.386
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 25.966,
+      "taskMs": 79.22999999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 24.487,
+      "taskMs": 71.367
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 36.132999999999996,
+      "taskMs": 604.07
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 36.179,
+      "taskMs": 591.7099999999999
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 83.994,
+      "taskMs": 626.1560000000001
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 73.99,
+      "taskMs": 602.485
+    },
+    {
+      "round": 11,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 33.504,
+      "taskMs": 577.975
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 23.548,
+      "taskMs": 66.762
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 24.508,
+      "taskMs": 68.693
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 24.034,
+      "taskMs": 68.265
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 23.522000000000002,
+      "taskMs": 68.77600000000001
+    },
+    {
+      "round": 12,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 23.075,
+      "taskMs": 65.29400000000001
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 77.97800000000001,
+      "taskMs": 726.851
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 35.55,
+      "taskMs": 583.447
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 90.59200000000001,
+      "taskMs": 635.775
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 37.094,
+      "taskMs": 583.798
+    },
+    {
+      "round": 12,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 34.156,
+      "taskMs": 544.8629999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 24.813000000000002,
+      "taskMs": 66.766
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 22.736,
+      "taskMs": 70.28099999999999
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 23.311,
+      "taskMs": 67.028
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 22.835,
+      "taskMs": 65.197
+    },
+    {
+      "round": 13,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 28.948999999999998,
+      "taskMs": 77.801
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 35.44,
+      "taskMs": 578.055
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 35.114,
+      "taskMs": 605.236
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 76.019,
+      "taskMs": 598.095
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 33.083,
+      "taskMs": 535.462
+    },
+    {
+      "round": 13,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 104.497,
+      "taskMs": 671.6379999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 5000,
+      "scriptMs": 35.505,
+      "taskMs": 532.817
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 5000,
+      "scriptMs": 77.873,
+      "taskMs": 605.394
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v6 (#574)",
+      "rows": 5000,
+      "scriptMs": 89.799,
+      "taskMs": 613.038
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v7",
+      "rows": 5000,
+      "scriptMs": 33.615,
+      "taskMs": 553.932
+    },
+    {
+      "round": 14,
+      "scenario": "Mount with @renderAll, 5 000 rows",
+      "build": "v5 (main)",
+      "rows": 5000,
+      "scriptMs": 32.474000000000004,
+      "taskMs": 526.8399999999999
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v5 (main)",
+      "rows": 15,
+      "scriptMs": 20.802,
+      "taskMs": 60.872
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + built-in array",
+      "rows": 15,
+      "scriptMs": 21.045,
+      "taskMs": 60.033
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 + tracked()",
+      "rows": 15,
+      "scriptMs": 22.543,
+      "taskMs": 64.12700000000001
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v7",
+      "rows": 15,
+      "scriptMs": 22.53,
+      "taskMs": 62.818
+    },
+    {
+      "round": 14,
+      "scenario": "Mount, 10 000 rows",
+      "build": "v6 (#574)",
+      "rows": 15,
+      "scriptMs": 22.103,
+      "taskMs": 60.926
+    }
+  ]
+}

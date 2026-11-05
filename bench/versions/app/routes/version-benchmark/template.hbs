@@ -1,0 +1,22 @@
+<div id="bench-scroller" style="height: 600px; overflow: auto; position: relative;">
+  <VerticalCollection
+    @items={{this.items}}
+    @key="id"
+    @estimateHeight={{60}}
+    @bufferSize={{5}}
+    @shouldRecycle={{this.shouldRecycle}}
+    @renderAll={{this.renderAll}}
+    as |item|
+  >
+    <article class="bench-row">
+      <header><strong>{{item.title}}</strong> <time>{{item.date}}</time></header>
+      {{#if item.note}}<p>{{item.note}}</p>{{/if}}
+      <ul>
+        {{#each item.tags as |tag|}}
+          <li>{{tag}}</li>
+        {{/each}}
+      </ul>
+      <button type="button">Open {{item.id}}</button>
+    </article>
+  </VerticalCollection>
+</div>
