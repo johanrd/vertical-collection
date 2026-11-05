@@ -1,5 +1,58 @@
 # Changelog
 
+## Release (2026-11-05)
+
+* @html-next/vertical-collection 6.0.0 (major)
+
+#### :boom: Breaking Change
+* `@html-next/vertical-collection`
+  * [#573](https://github.com/html-next/vertical-collection/pull/573) Convert VerticalCollection to a Glimmer component ([@johanrd](https://github.com/johanrd))
+
+#### :rocket: Enhancement
+* `@html-next/vertical-collection`
+  * [#574](https://github.com/html-next/vertical-collection/pull/574) Convert the addon to TypeScript ([@johanrd](https://github.com/johanrd))
+
+#### :bug: Bug Fix
+* `@html-next/vertical-collection`
+  * [#585](https://github.com/html-next/vertical-collection/pull/585) Update rendered rows when new items keep their keys ([@johanrd](https://github.com/johanrd))
+  * [#575](https://github.com/html-next/vertical-collection/pull/575) Fix @debugCSS reading containers the radar does not have ([@johanrd](https://github.com/johanrd))
+  * [#582](https://github.com/html-next/vertical-collection/pull/582) Add @glimmer/component to the addon's dev dependencies ([@johanrd](https://github.com/johanrd))
+  * [#561](https://github.com/html-next/vertical-collection/pull/561) Upgrade raf scheduler to 0.5.1 ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#555](https://github.com/html-next/vertical-collection/pull/555) Fix skip-list edge cases with zero totals and negative values ([@lukemelia](https://github.com/lukemelia))
+  * [#527](https://github.com/html-next/vertical-collection/pull/527) fix debugger removeEventListener prototype misasignment? ([@johanrd](https://github.com/johanrd))
+
+#### :memo: Documentation
+* Other
+  * [#581](https://github.com/html-next/vertical-collection/pull/581) Document all options on the settings page ([@johanrd](https://github.com/johanrd))
+* `@html-next/vertical-collection`
+  * [#568](https://github.com/html-next/vertical-collection/pull/568) docs: explain shouldRecycle ([@johanrd](https://github.com/johanrd))
+
+#### :house: Internal
+* `@html-next/vertical-collection`
+  * [#584](https://github.com/html-next/vertical-collection/pull/584) Regenerate the lockfile ([@NullVoxPopuli-ai-agent](https://github.com/NullVoxPopuli-ai-agent))
+  * [#583](https://github.com/html-next/vertical-collection/pull/583) Build the addon with tsdown and @nullvoxpopuli/ember-rolldown ([@NullVoxPopuli-ai-agent](https://github.com/NullVoxPopuli-ai-agent))
+  * [#565](https://github.com/html-next/vertical-collection/pull/565) Prepare Release v5.0.5 ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#563](https://github.com/html-next/vertical-collection/pull/563) Revert "Prepare Release v5.0.5" ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#558](https://github.com/html-next/vertical-collection/pull/558) Prepare Release v5.0.5 ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#539](https://github.com/html-next/vertical-collection/pull/539) Prepare Release v5.0.4 ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#528](https://github.com/html-next/vertical-collection/pull/528) Prepare Release v5.0.3 ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#526](https://github.com/html-next/vertical-collection/pull/526) Baseline 2018 ([@johanrd](https://github.com/johanrd))
+* Other
+  * [#576](https://github.com/html-next/vertical-collection/pull/576) Use the current WarpDrive store in the test app ([@johanrd](https://github.com/johanrd))
+  * [#579](https://github.com/html-next/vertical-collection/pull/579) Use @ember/test-helpers 5.7 in the test app ([@johanrd](https://github.com/johanrd))
+  * [#580](https://github.com/html-next/vertical-collection/pull/580) Pass the index to the slides in the demos ([@johanrd](https://github.com/johanrd))
+  * [#569](https://github.com/html-next/vertical-collection/pull/569) chore: bump warp-drive and embroider to fix ember 7 CI ([@johanrd](https://github.com/johanrd))
+  * [#564](https://github.com/html-next/vertical-collection/pull/564) Update release-plan ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#559](https://github.com/html-next/vertical-collection/pull/559) Replace ember-lts-6.4 and ember-lts-6.8 scenarios with ember-lts-6.12 ([@NullVoxPopuli-ai-agent](https://github.com/NullVoxPopuli-ai-agent))
+  * [#557](https://github.com/html-next/vertical-collection/pull/557) Update test-app dependencies for ember-source 7 compatibility ([@NullVoxPopuli-ai-agent](https://github.com/NullVoxPopuli-ai-agent))
+
+#### Committers: 5
+- @NullVoxPopuli's reduced-access machine account for AI usage ([@NullVoxPopuli-ai-agent](https://github.com/NullVoxPopuli-ai-agent))
+- GitHub Actions [Bot] ([@github-actions](https://github.com/apps/github-actions))
+- Johan Røed ([@johanrd](https://github.com/johanrd))
+- Luke Melia ([@lukemelia](https://github.com/lukemelia))
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2026-04-10)
 
 * @html-next/vertical-collection 5.0.5 (patch)
